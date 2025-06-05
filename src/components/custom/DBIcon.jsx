@@ -29,8 +29,13 @@ export default function DBIcon({
         <div>
           <Link to={to} style={{ display: "inline-block" }}>
             <MotionDiv className="relative flex justify-center items-center cursor-pointer">
-              <img src={databaseImage} width={60} alt="Database icon" />
-              <div className="absolute z-10">{children}</div>
+              <img
+                src={databaseImage}
+                width={180}
+                alt="Database icon"
+                className="opacity-50"
+              />
+              <div className="absolute z-10 ">{children}</div>
             </MotionDiv>
           </Link>
         </div>
@@ -38,7 +43,10 @@ export default function DBIcon({
       <PopoverContent bg="gray.700" color="white" borderRadius="md">
         <PopoverArrow />
         <PopoverBody className="p-2">
-          <h3 className="font-bold text-lg">{data.title}</h3>
+          <h3 className="!font-bold !text-xl !text-center ">{data.title}</h3>
+          <p className="text-sm text-gray-400 !mb-4 !text-center">
+            Has click en la imagen para explorar
+          </p>
           <p>
             <strong>Registros:</strong> {data.records}
           </p>
@@ -46,14 +54,14 @@ export default function DBIcon({
             <strong>Dominio:</strong> {data.domain}
           </p>
           {data.reference && (
-            <p>
+            <p className="text-center">
               <a
                 href={data.reference}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
               >
-                <strong>Referencia</strong>
+                <strong>[Referencia]</strong>
               </a>
             </p>
           )}
@@ -61,57 +69,4 @@ export default function DBIcon({
       </PopoverContent>
     </Popover>
   );
-  /*
-    <Tooltip
-      hasArrow
-      placement="top"
-      label={
-        <div className="p-2">
-          <h3 className="font-bold text-lg">{data.title}</h3>
-          <p>
-            <strong>Registros:</strong> {data.records}
-          </p>
-          <p>
-            <strong>Dominio:</strong> {data.domain}
-          </p>
-          {data.reference && (
-            <p>
-              <a
-                href={data.reference}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong>Referencia</strong>
-              </a>
-            </p>
-          )}
-        </div>
-      }
-      bg="gray.700"
-      color="white"
-      borderRadius="md"
-    >
-      <div>
-        <Link to={to} style={{ display: "inline-block" }}>
-          <MotionDiv
-            className="relative flex justify-center items-center cursor-pointer"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            <img src={databaseImage} width={60} alt="Database icon" />
-            <div className="absolute z-10">
-              <MotionDiv
-                whileHover={{
-                  rotate: [0, -5, 5, -5, 5, 0],
-                  transition: { duration: 0.6 },
-                }}
-              >
-                {children}
-              </MotionDiv>
-            </div>
-          </MotionDiv>
-        </Link>
-      </div>
-    </Tooltip>
-      */
 }
