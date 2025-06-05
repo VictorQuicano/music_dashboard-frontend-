@@ -3,3 +3,8 @@
 #root {
   @apply w-full h-screen;
 }
+h1 {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
