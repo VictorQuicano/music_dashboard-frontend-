@@ -55,7 +55,11 @@ function Home() {
             </DBIcon>
           </div>
           <div className="flex justify-center">
-            <DBIcon data={Extrasensory} to="#">
+            <DBIcon
+              data={Extrasensory}
+              to="/music_extrasensory"
+              redirect={true}
+            >
               <img src={HumanActivity} width={150} />
             </DBIcon>
           </div>

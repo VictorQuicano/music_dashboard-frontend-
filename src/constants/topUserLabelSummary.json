@@ -1,0 +1,3303 @@
+{
+  "total_records": 671298,
+  "records_per_year": {
+    "2005": 13677,
+    "2006": 24341,
+    "2007": 35074,
+    "2008": 47148,
+    "2009": 49004,
+    "2010": 47862,
+    "2011": 42999,
+    "2012": 26910,
+    "2013": 38067,
+    "2014": 33329,
+    "2015": 41646,
+    "2016": 54122,
+    "2017": 62966,
+    "2018": 65479,
+    "2019": 72607,
+    "2020": 16067
+  },
+  "labels_global": [
+    {
+      "categoria": "actividad_fisica",
+      "labels": {
+        "label:FIX_walking": {
+          "prefijo": "FIX",
+          "count": 13497
+        },
+        "label:FIX_running": {
+          "prefijo": "FIX",
+          "count": 0
+        },
+        "label:OR_exercise": {
+          "prefijo": "OR",
+          "count": 34222
+        },
+        "label:AT_THE_GYM": {
+          "prefijo": "GENERIC",
+          "count": 14364
+        },
+        "label:STAIRS_-_GOING_UP": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:STAIRS_-_GOING_DOWN": {
+          "prefijo": "GENERIC",
+          "count": 0
+        }
+      }
+    },
+    {
+      "categoria": "transporte",
+      "labels": {
+        "label:BICYCLING": {
+          "prefijo": "GENERIC",
+          "count": 19858
+        },
+        "label:IN_A_CAR": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:ON_A_BUS": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:DRIVE_-_I_M_THE_DRIVER": {
+          "prefijo": "GENERIC",
+          "count": 25508
+        },
+        "label:DRIVE_-_I_M_A_PASSENGER": {
+          "prefijo": "GENERIC",
+          "count": 377
+        }
+      }
+    },
+    {
+      "categoria": "ubicacion",
+      "labels": {
+        "label:LOC_home": {
+          "prefijo": "LOC",
+          "count": 350645
+        },
+        "label:LOC_main_workplace": {
+          "prefijo": "LOC",
+          "count": 0
+        },
+        "label:LOC_beach": {
+          "prefijo": "LOC",
+          "count": 0
+        },
+        "label:FIX_restaurant": {
+          "prefijo": "FIX",
+          "count": 7200
+        },
+        "label:AT_A_BAR": {
+          "prefijo": "GENERIC",
+          "count": 423
+        },
+        "label:AT_SCHOOL": {
+          "prefijo": "GENERIC",
+          "count": 42575
+        }
+      }
+    },
+    {
+      "categoria": "uso_del_telefono",
+      "labels": {
+        "label:PHONE_IN_POCKET": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:PHONE_IN_HAND": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:PHONE_IN_BAG": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:PHONE_ON_TABLE": {
+          "prefijo": "GENERIC",
+          "count": 0
+        }
+      }
+    },
+    {
+      "categoria": "estado_postural",
+      "labels": {
+        "label:LYING_DOWN": {
+          "prefijo": "GENERIC",
+          "count": 160599
+        },
+        "label:SITTING": {
+          "prefijo": "GENERIC",
+          "count": 177195
+        },
+        "label:OR_standing": {
+          "prefijo": "OR",
+          "count": 87506
+        }
+      }
+    },
+    {
+      "categoria": "rutina_diaria",
+      "labels": {
+        "label:SLEEPING": {
+          "prefijo": "GENERIC",
+          "count": 149439
+        },
+        "label:EATING": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:COOKING": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:CLEANING": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:DOING_LAUNDRY": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:WASHING_DISHES": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:TOILET": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:GROOMING": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:DRESSING": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:BATHING_-_SHOWER": {
+          "prefijo": "GENERIC",
+          "count": 0
+        }
+      }
+    },
+    {
+      "categoria": "ocio",
+      "labels": {
+        "label:WATCHING_TV": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:SURFING_THE_INTERNET": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:SINGING": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:AT_A_PARTY": {
+          "prefijo": "GENERIC",
+          "count": 0
+        }
+      }
+    },
+    {
+      "categoria": "actividad_social",
+      "labels": {
+        "label:TALKING": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:WITH_CO-WORKERS": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:WITH_FRIENDS": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:IN_A_MEETING": {
+          "prefijo": "GENERIC",
+          "count": 0
+        }
+      }
+    },
+    {
+      "categoria": "trabajo_estudio",
+      "labels": {
+        "label:LAB_WORK": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:IN_CLASS": {
+          "prefijo": "GENERIC",
+          "count": 0
+        },
+        "label:COMPUTER_WORK": {
+          "prefijo": "GENERIC",
+          "count": 82776
+        }
+      }
+    },
+    {
+      "categoria": "sinteticos_y_fix",
+      "labels": {
+        "label:OR_indoors": {
+          "prefijo": "OR",
+          "count": 355510
+        },
+        "label:OR_outside": {
+          "prefijo": "OR",
+          "count": 8658
+        }
+      }
+    }
+  ],
+  "labels_by_year": {
+    "2005": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 365
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 887
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 470
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 417
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 531
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 14
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 7074
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 218
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 77
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 1249
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 1674
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 4933
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 1832
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 1383
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 2276
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 7248
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 254
+      }
+    },
+    "2006": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 585
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 1822
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 1250
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 572
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 868
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 44
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 13088
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 464
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 54
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 2751
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 3397
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 9094
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 3784
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 2958
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 4787
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 14078
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 436
+      }
+    },
+    "2007": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 938
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 2590
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 1782
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 808
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 1299
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 67
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 18944
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 708
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 40
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 3863
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 4008
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 13902
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 5334
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 3352
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 7116
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 20205
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 701
+      }
+    },
+    "2008": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 1092
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 3463
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 1862
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 1601
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 2673
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 89
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 23425
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 925
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 69
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 4690
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 5012
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 18158
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 6645
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 4169
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 8064
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 24567
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 939
+      }
+    },
+    "2009": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 1184
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 3650
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 2117
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 1533
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 2622
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 109
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 24874
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 953
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 127
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 5175
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 4795
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 19578
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 7030
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 3934
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 8908
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 26037
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 988
+      }
+    },
+    "2010": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 856
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 2709
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 1385
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 1324
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 1779
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 46
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 25202
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 571
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 49
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 3463
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 11367
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 13528
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 6358
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 10709
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 6367
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 25969
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 689
+      }
+    },
+    "2011": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 627
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 2087
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 476
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 1611
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 1442
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 1
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 21967
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 324
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 1594
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 13565
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 8092
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 5327
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 13047
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 3525
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 21973
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 468
+      }
+    },
+    "2012": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 271
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 1103
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 259
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 844
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 808
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 2
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 14339
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 134
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 743
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 10186
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 4024
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 3543
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 9930
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 1661
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 14437
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 198
+      }
+    },
+    "2013": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 692
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 1911
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 642
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 1269
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 1222
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 19974
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 252
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 1838
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 10862
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 8548
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 4978
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 10232
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 4158
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 20245
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 383
+      }
+    },
+    "2014": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 646
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 1456
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 413
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 1043
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 1071
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 17677
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 224
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 1442
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 10171
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 7101
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 4104
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 9611
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 3313
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 17743
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 352
+      }
+    },
+    "2015": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 705
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 1632
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 522
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 1110
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 1293
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 22176
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 250
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 1747
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 13299
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 8294
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 5178
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 12700
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 3895
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 22320
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 350
+      }
+    },
+    "2016": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 1109
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 2199
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 734
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 1465
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 1868
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 28252
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 401
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 2954
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 14185
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 12757
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 6618
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 13270
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 6068
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 28107
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 563
+      }
+    },
+    "2017": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 960
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 2662
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 677
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 1985
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 2177
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 32515
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 499
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 2674
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 19474
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 11943
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 7741
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 18688
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 5376
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 32311
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 653
+      }
+    },
+    "2018": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 1270
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 2726
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 747
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 1979
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 2483
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 5
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 34033
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 508
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 7
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 3197
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 17623
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 14403
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 8102
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 16489
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 6424
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 33698
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 615
+      }
+    },
+    "2019": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 1807
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 2710
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 813
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 1897
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 2773
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 38525
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 638
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 4229
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 17159
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 18656
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 8910
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 15538
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 8822
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 38027
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 864
+      }
+    },
+    "2020": {
+      "label:FIX_walking": {
+        "prefijo": "FIX",
+        "count": 390
+      },
+      "label:FIX_running": {
+        "prefijo": "FIX",
+        "count": 0
+      },
+      "label:OR_exercise": {
+        "prefijo": "OR",
+        "count": 615
+      },
+      "label:AT_THE_GYM": {
+        "prefijo": "GENERIC",
+        "count": 215
+      },
+      "label:STAIRS_-_GOING_UP": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:STAIRS_-_GOING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BICYCLING": {
+        "prefijo": "GENERIC",
+        "count": 400
+      },
+      "label:IN_A_CAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:ON_A_BUS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRIVE_-_I_M_THE_DRIVER": {
+        "prefijo": "GENERIC",
+        "count": 599
+      },
+      "label:DRIVE_-_I_M_A_PASSENGER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LOC_home": {
+        "prefijo": "LOC",
+        "count": 8580
+      },
+      "label:LOC_main_workplace": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:LOC_beach": {
+        "prefijo": "LOC",
+        "count": 0
+      },
+      "label:FIX_restaurant": {
+        "prefijo": "FIX",
+        "count": 131
+      },
+      "label:AT_A_BAR": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_SCHOOL": {
+        "prefijo": "GENERIC",
+        "count": 966
+      },
+      "label:PHONE_IN_POCKET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_HAND": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_IN_BAG": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:PHONE_ON_TABLE": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LYING_DOWN": {
+        "prefijo": "GENERIC",
+        "count": 3822
+      },
+      "label:SITTING": {
+        "prefijo": "GENERIC",
+        "count": 4184
+      },
+      "label:OR_standing": {
+        "prefijo": "OR",
+        "count": 2022
+      },
+      "label:SLEEPING": {
+        "prefijo": "GENERIC",
+        "count": 3429
+      },
+      "label:EATING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COOKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:CLEANING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DOING_LAUNDRY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WASHING_DISHES": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TOILET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:GROOMING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:DRESSING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:BATHING_-_SHOWER": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WATCHING_TV": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SURFING_THE_INTERNET": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:SINGING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:AT_A_PARTY": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:TALKING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_CO-WORKERS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:WITH_FRIENDS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_A_MEETING": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:LAB_WORK": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:IN_CLASS": {
+        "prefijo": "GENERIC",
+        "count": 0
+      },
+      "label:COMPUTER_WORK": {
+        "prefijo": "GENERIC",
+        "count": 2016
+      },
+      "label:OR_indoors": {
+        "prefijo": "OR",
+        "count": 8545
+      },
+      "label:OR_outside": {
+        "prefijo": "OR",
+        "count": 205
+      }
+    }
+  }
+}

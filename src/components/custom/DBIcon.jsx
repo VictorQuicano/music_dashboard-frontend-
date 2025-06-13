@@ -22,13 +22,22 @@ export default function DBIcon({
     reference: "",
   },
   to = "#",
+  redirect = false,
 }) {
   return (
     <Popover placement="top" trigger="hover">
       <PopoverTrigger>
         <div>
-          <Link to={to} style={{ display: "inline-block" }}>
-            <MotionDiv className="relative flex justify-center items-center cursor-pointer">
+          <Link
+            to={to}
+            style={{ display: "inline-block" }}
+            className={redirect ? "cursor-pointer" : "cursor-not-allowed"}
+          >
+            <MotionDiv
+              className={`relative flex justify-center items-center ${
+                redirect ? "cursor-pointer" : "cursor-not-allowed"
+              }`}
+            >
               <img
                 src={databaseImage}
                 width={180}
@@ -44,9 +53,11 @@ export default function DBIcon({
         <PopoverArrow />
         <PopoverBody className="p-2">
           <h3 className="!font-bold !text-xl !text-center ">{data.title}</h3>
-          <p className="text-sm text-gray-400 !mb-4 !text-center">
-            Has click en la imagen para explorar
-          </p>
+          {redirect && (
+            <p className="text-sm text-gray-400 !mb-4 !text-center">
+              Has click en la imagen para explorar
+            </p>
+          )}
           <p>
             <strong>Registros:</strong> {data.records}
           </p>

@@ -1,12 +1,22 @@
 import Music from "@/components/icons/Music";
 import Back from "../icons/Back";
-import Graphs from "../icons/Graphs";
 import { Link } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { Tooltip } from "@chakra-ui/react";
+import FilterSidebar from "../FilterSideBar";
 
-export function Music4All({ children, title = "Music 4 All", back }) {
+export function Sensory({
+  children,
+  title = "Music 4 All",
+  back,
+  selectedYear,
+  setSelectedYear,
+  selectedCategories,
+  setSelectedCategories,
+  selectedLabels,
+  setSelectedLabels,
+}) {
   const controls = useAnimation();
   const animationRef = useRef(false); // Para controlar el ciclo
 
@@ -25,7 +35,7 @@ export function Music4All({ children, title = "Music 4 All", back }) {
 
   return (
     <div className="flex max-w-full h-auto min-h-0 max-h-none">
-      <div className="bg-cyan-800 w-[100px] max-h-full min-h-screen flex flex-col justify-start items-center pt-4 relative">
+      <div className="bg-cyan-800 w-fit max-h-full min-h-screen flex flex-col justify-start items-center pt-4 relative">
         <div className="sticky top-4">
           <Link
             className="hover:cursor-pointer hover:bg-white rounded-lg"
@@ -39,16 +49,12 @@ export function Music4All({ children, title = "Music 4 All", back }) {
             </Tooltip>
           </Link>
           <div className="flex flex-col">
-            <Tooltip
-              content="Buscar Artista"
-              positioning={{ placement: "right-end" }}
-            >
-              <Link to="/music_4_all/search" className="hover:cursor-pointer">
-                <div className="hover:bg-cyan-600 rounded-lg p-4">
-                  <Graphs className="text-white w-9 h-9" />
-                </div>
-              </Link>
-            </Tooltip>
+            <FilterSidebar
+              selectedYear={selectedYear}
+              setSelectedYear={setSelectedYear}
+              selectedLabels={selectedLabels}
+              setSelectedLabels={setSelectedLabels}
+            />
           </div>
         </div>
       </div>

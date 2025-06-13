@@ -5,37 +5,17 @@ const DEFAULT_IMAGE =
   "https://i0.wp.com/blog.cuidamimascota.com/wp-content/uploads/2020/01/21c26-screen-shot-2018-04-16-at-4.42.32-pm.png?resize=688%2C540&ssl=1";
 
 async function fetchArtistImage(artistName) {
-  const clientId = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
-  const clientSecret = import.meta.env.VITE_SPOTIFY_CLIENT_SECRET;
-
-  // Obtener el token de acceso
-  const authResponse = await fetch("https://accounts.spotify.com/api/token", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-      Authorization: "Basic " + btoa(`${clientId}:${clientSecret}`),
-    },
-    body: "grant_type=client_credentials",
-  });
-  const authData = await authResponse.json();
-  const accessToken = authData.access_token;
-
   // Buscar el artista por nombre
   const searchResponse = await fetch(
-    `https://api.spotify.com/v1/search?q=${encodeURIComponent(
+    `https://es.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(
       artistName
-    )}&type=artist&limit=1`,
-    {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    }
+    )}&prop=pageimages&format=json&pithumbsize=300`
   );
   const searchData = await searchResponse.json();
-  const artist = searchData.artists.items[0];
+  const artist = searchData.query?.pages?.[0]?.thumbnail.source;
 
-  if (artist && artist.images.length > 0) {
-    return artist.images[0].url;
+  if (artist) {
+    return artist;
   } else {
     return DEFAULT_IMAGE;
   }
