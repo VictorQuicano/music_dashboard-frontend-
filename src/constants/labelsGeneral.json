@@ -1,12 +1,42 @@
 {
-  "actividad_fisica": "Actividad Física 🚶‍♂️",
-  "transporte": "Transporte 🚗",
-  "ubicacion": "Ubicación 📍",
-  "uso_del_telefono": "Uso del Teléfono 📱",
-  "estado_postural": "Postura 🧍‍♀️",
-  "rutina_diaria": "Rutina Diaria 🛁",
-  "ocio": "Ocio 🎮",
-  "actividad_social": "Interacción Social 🗣️",
-  "trabajo_estudio": "Trabajo y Estudio 💻",
-  "sinteticos_y_fix": "Etiquetas Sintéticas / Corregidas 🧪"
+  "actividad_fisica": {
+    "etiqueta": "Actividad Física 🚶‍♂️",
+    "color": "#4CAF50"
+  },
+  "transporte": {
+    "etiqueta": "Transporte 🚗",
+    "color": "#2196F3"
+  },
+  "ubicacion": {
+    "etiqueta": "Ubicación 📍",
+    "color": "#9C27B0"
+  },
+  "uso_del_telefono": {
+    "etiqueta": "Uso del Teléfono 📱",
+    "color": "#FF9800"
+  },
+  "estado_postural": {
+    "etiqueta": "Postura 🧍‍♀️",
+    "color": "#795548"
+  },
+  "rutina_diaria": {
+    "etiqueta": "Rutina Diaria 🛁",
+    "color": "#03A9F4"
+  },
+  "ocio": {
+    "etiqueta": "Ocio 🎮",
+    "color": "#E91E63"
+  },
+  "actividad_social": {
+    "etiqueta": "Interacción Social 🗣️",
+    "color": "#FF5722"
+  },
+  "trabajo_estudio": {
+    "etiqueta": "Trabajo y Estudio 💻",
+    "color": "#607D8B"
+  },
+  "sinteticos_y_fix": {
+    "etiqueta": "Etiquetas Sintéticas / Corregidas 🧪",
+    "color": "#673AB7"
+  }
 }

@@ -1,0 +1,1454 @@
+{
+  "general": {
+    "bin_10": [
+      {
+        "mean": 1.0062,
+        "std": 0.0313,
+        "label": "14-02-2005"
+      },
+      {
+        "mean": 1.0065,
+        "std": 0.0358,
+        "label": "11-11-2007"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.031,
+        "label": "09-04-2009"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0261,
+        "label": "19-08-2010"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0261,
+        "label": "21-04-2012"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.025,
+        "label": "07-04-2014"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0268,
+        "label": "18-01-2016"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0265,
+        "label": "03-04-2017"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0288,
+        "label": "20-04-2018"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0297,
+        "label": "02-04-2019"
+      }
+    ],
+    "bin_30": [
+      {
+        "mean": 1.0063,
+        "std": 0.0332,
+        "label": "14-02-2005"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0295,
+        "label": "25-05-2006"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0312,
+        "label": "15-03-2007"
+      },
+      {
+        "mean": 1.0064,
+        "std": 0.035,
+        "label": "11-11-2007"
+      },
+      {
+        "mean": 1.0065,
+        "std": 0.0359,
+        "label": "09-05-2008"
+      },
+      {
+        "mean": 1.0066,
+        "std": 0.0364,
+        "label": "31-10-2008"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0333,
+        "label": "09-04-2009"
+      },
+      {
+        "mean": 1.0062,
+        "std": 0.0335,
+        "label": "15-09-2009"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0263,
+        "label": "26-04-2010"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0263,
+        "label": "19-08-2010"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0264,
+        "label": "17-02-2011"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0257,
+        "label": "03-08-2011"
+      },
+      {
+        "mean": 1.0051,
+        "std": 0.0225,
+        "label": "21-04-2012"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0282,
+        "label": "09-02-2013"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0277,
+        "label": "12-09-2013"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0248,
+        "label": "07-04-2014"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0249,
+        "label": "27-12-2014"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0254,
+        "label": "14-08-2015"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0279,
+        "label": "18-01-2016"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0266,
+        "label": "17-06-2016"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0257,
+        "label": "18-11-2016"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.026,
+        "label": "03-04-2017"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0267,
+        "label": "14-08-2017"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0266,
+        "label": "10-12-2017"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0285,
+        "label": "20-04-2018"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0287,
+        "label": "02-09-2018"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0291,
+        "label": "18-12-2018"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0297,
+        "label": "02-04-2019"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0292,
+        "label": "14-07-2019"
+      },
+      {
+        "mean": 1.0062,
+        "std": 0.03,
+        "label": "14-11-2019"
+      }
+    ],
+    "bin_60": [
+      {
+        "mean": 1.0064,
+        "std": 0.0334,
+        "label": "14-02-2005"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0331,
+        "label": "27-11-2005"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0291,
+        "label": "25-05-2006"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0298,
+        "label": "10-11-2006"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0305,
+        "label": "15-03-2007"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0319,
+        "label": "04-07-2007"
+      },
+      {
+        "mean": 1.0066,
+        "std": 0.0352,
+        "label": "11-11-2007"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0348,
+        "label": "12-02-2008"
+      },
+      {
+        "mean": 1.0065,
+        "std": 0.0357,
+        "label": "09-05-2008"
+      },
+      {
+        "mean": 1.0064,
+        "std": 0.036,
+        "label": "06-08-2008"
+      },
+      {
+        "mean": 1.0067,
+        "std": 0.0363,
+        "label": "31-10-2008"
+      },
+      {
+        "mean": 1.0065,
+        "std": 0.0366,
+        "label": "21-01-2009"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0332,
+        "label": "09-04-2009"
+      },
+      {
+        "mean": 1.0062,
+        "std": 0.0334,
+        "label": "05-07-2009"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.034,
+        "label": "15-09-2009"
+      },
+      {
+        "mean": 1.0062,
+        "std": 0.033,
+        "label": "13-12-2009"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0269,
+        "label": "26-04-2010"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0256,
+        "label": "23-06-2010"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0241,
+        "label": "19-08-2010"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0286,
+        "label": "18-11-2010"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0278,
+        "label": "17-02-2011"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.025,
+        "label": "15-05-2011"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0271,
+        "label": "03-08-2011"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0242,
+        "label": "23-11-2011"
+      },
+      {
+        "mean": 1.005,
+        "std": 0.0215,
+        "label": "21-04-2012"
+      },
+      {
+        "mean": 1.0053,
+        "std": 0.0234,
+        "label": "11-10-2012"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0272,
+        "label": "09-02-2013"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0292,
+        "label": "20-05-2013"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0265,
+        "label": "12-09-2013"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0289,
+        "label": "27-12-2013"
+      },
+      {
+        "mean": 1.0053,
+        "std": 0.0232,
+        "label": "07-04-2014"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0263,
+        "label": "29-07-2014"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0253,
+        "label": "27-12-2014"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0245,
+        "label": "08-05-2015"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0246,
+        "label": "14-08-2015"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0262,
+        "label": "26-10-2015"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.028,
+        "label": "18-01-2016"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0279,
+        "label": "01-04-2016"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0279,
+        "label": "17-06-2016"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0253,
+        "label": "09-09-2016"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0265,
+        "label": "18-11-2016"
+      },
+      {
+        "mean": 1.0053,
+        "std": 0.0249,
+        "label": "29-01-2017"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0267,
+        "label": "03-04-2017"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0253,
+        "label": "11-06-2017"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0261,
+        "label": "14-08-2017"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0273,
+        "label": "17-10-2017"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0266,
+        "label": "10-12-2017"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0266,
+        "label": "19-02-2018"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0289,
+        "label": "20-04-2018"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0281,
+        "label": "14-06-2018"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0269,
+        "label": "02-09-2018"
+      },
+      {
+        "mean": 1.0062,
+        "std": 0.0305,
+        "label": "09-11-2018"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0283,
+        "label": "18-12-2018"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0299,
+        "label": "18-02-2019"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0282,
+        "label": "02-04-2019"
+      },
+      {
+        "mean": 1.0064,
+        "std": 0.0313,
+        "label": "21-05-2019"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0285,
+        "label": "14-07-2019"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0299,
+        "label": "09-09-2019"
+      },
+      {
+        "mean": 1.0067,
+        "std": 0.0329,
+        "label": "14-11-2019"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0271,
+        "label": "29-01-2020"
+      }
+    ]
+  },
+  "by_year": {
+    "2005": [
+      {
+        "mean": 1.0063,
+        "std": 0.0354,
+        "label": "February"
+      },
+      {
+        "mean": 1.0067,
+        "std": 0.0355,
+        "label": "March"
+      },
+      {
+        "mean": 1.0074,
+        "std": 0.0376,
+        "label": "April"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.031,
+        "label": "May"
+      },
+      {
+        "mean": 1.0053,
+        "std": 0.029,
+        "label": "June"
+      },
+      {
+        "mean": 1.0053,
+        "std": 0.0289,
+        "label": "July"
+      },
+      {
+        "mean": 1.007,
+        "std": 0.036,
+        "label": "August"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0337,
+        "label": "September"
+      },
+      {
+        "mean": 1.0065,
+        "std": 0.0343,
+        "label": "October"
+      },
+      {
+        "mean": 1.0066,
+        "std": 0.0349,
+        "label": "November"
+      },
+      {
+        "mean": 1.007,
+        "std": 0.0369,
+        "label": "December"
+      }
+    ],
+    "2006": [
+      {
+        "mean": 1.0068,
+        "std": 0.0374,
+        "label": "January"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0289,
+        "label": "February"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0284,
+        "label": "March"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0325,
+        "label": "April"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0333,
+        "label": "May"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0265,
+        "label": "June"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0291,
+        "label": "July"
+      },
+      {
+        "mean": 1.0051,
+        "std": 0.0247,
+        "label": "August"
+      },
+      {
+        "mean": 1.0062,
+        "std": 0.031,
+        "label": "September"
+      },
+      {
+        "mean": 1.0064,
+        "std": 0.0322,
+        "label": "October"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0302,
+        "label": "November"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0269,
+        "label": "December"
+      }
+    ],
+    "2007": [
+      {
+        "mean": 1.0062,
+        "std": 0.0302,
+        "label": "January"
+      },
+      {
+        "mean": 1.0066,
+        "std": 0.0322,
+        "label": "February"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0303,
+        "label": "March"
+      },
+      {
+        "mean": 1.0062,
+        "std": 0.032,
+        "label": "April"
+      },
+      {
+        "mean": 1.0064,
+        "std": 0.0303,
+        "label": "May"
+      },
+      {
+        "mean": 1.0064,
+        "std": 0.0298,
+        "label": "June"
+      },
+      {
+        "mean": 1.0064,
+        "std": 0.0306,
+        "label": "July"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0285,
+        "label": "August"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0286,
+        "label": "September"
+      },
+      {
+        "mean": 1.0065,
+        "std": 0.0349,
+        "label": "October"
+      },
+      {
+        "mean": 1.0066,
+        "std": 0.0351,
+        "label": "November"
+      },
+      {
+        "mean": 1.0067,
+        "std": 0.0335,
+        "label": "December"
+      }
+    ],
+    "2008": [
+      {
+        "mean": 1.0065,
+        "std": 0.0358,
+        "label": "January"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.036,
+        "label": "February"
+      },
+      {
+        "mean": 1.0068,
+        "std": 0.0366,
+        "label": "March"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0332,
+        "label": "April"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0354,
+        "label": "May"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0351,
+        "label": "June"
+      },
+      {
+        "mean": 1.0066,
+        "std": 0.0351,
+        "label": "July"
+      },
+      {
+        "mean": 1.0066,
+        "std": 0.0375,
+        "label": "August"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0346,
+        "label": "September"
+      },
+      {
+        "mean": 1.0068,
+        "std": 0.0374,
+        "label": "October"
+      },
+      {
+        "mean": 1.0069,
+        "std": 0.0367,
+        "label": "November"
+      },
+      {
+        "mean": 1.0066,
+        "std": 0.0354,
+        "label": "December"
+      }
+    ],
+    "2009": [
+      {
+        "mean": 1.0068,
+        "std": 0.037,
+        "label": "January"
+      },
+      {
+        "mean": 1.0068,
+        "std": 0.0383,
+        "label": "February"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0348,
+        "label": "March"
+      },
+      {
+        "mean": 1.0067,
+        "std": 0.036,
+        "label": "April"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.032,
+        "label": "May"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0323,
+        "label": "June"
+      },
+      {
+        "mean": 1.0065,
+        "std": 0.0359,
+        "label": "July"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0323,
+        "label": "August"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0326,
+        "label": "September"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0336,
+        "label": "October"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0344,
+        "label": "November"
+      },
+      {
+        "mean": 1.0065,
+        "std": 0.0343,
+        "label": "December"
+      }
+    ],
+    "2010": [
+      {
+        "mean": 1.0065,
+        "std": 0.0342,
+        "label": "January"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0322,
+        "label": "February"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0321,
+        "label": "March"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0327,
+        "label": "April"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.027,
+        "label": "May"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0269,
+        "label": "June"
+      },
+      {
+        "mean": 1.0051,
+        "std": 0.0225,
+        "label": "July"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0271,
+        "label": "August"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0247,
+        "label": "September"
+      },
+      {
+        "mean": 1.0051,
+        "std": 0.0226,
+        "label": "October"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0296,
+        "label": "November"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0285,
+        "label": "December"
+      }
+    ],
+    "2011": [
+      {
+        "mean": 1.0055,
+        "std": 0.0277,
+        "label": "January"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0295,
+        "label": "February"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0276,
+        "label": "March"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.028,
+        "label": "April"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0257,
+        "label": "May"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0254,
+        "label": "June"
+      },
+      {
+        "mean": 1.0053,
+        "std": 0.0242,
+        "label": "July"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0276,
+        "label": "August"
+      },
+      {
+        "mean": 1.0051,
+        "std": 0.0219,
+        "label": "September"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0296,
+        "label": "October"
+      },
+      {
+        "mean": 1.0067,
+        "std": 0.0316,
+        "label": "November"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0303,
+        "label": "December"
+      }
+    ],
+    "2012": [
+      {
+        "mean": 1.0054,
+        "std": 0.0253,
+        "label": "January"
+      },
+      {
+        "mean": 1.0052,
+        "std": 0.0213,
+        "label": "February"
+      },
+      {
+        "mean": 1.0043,
+        "std": 0.0168,
+        "label": "March"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0206,
+        "label": "April"
+      },
+      {
+        "mean": 1.0051,
+        "std": 0.0225,
+        "label": "May"
+      },
+      {
+        "mean": 1.0044,
+        "std": 0.0173,
+        "label": "June"
+      },
+      {
+        "mean": 1.0039,
+        "std": 0.0128,
+        "label": "July"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0278,
+        "label": "August"
+      },
+      {
+        "mean": 1.0048,
+        "std": 0.0205,
+        "label": "September"
+      },
+      {
+        "mean": 1.0051,
+        "std": 0.0208,
+        "label": "October"
+      },
+      {
+        "mean": 1.0049,
+        "std": 0.0191,
+        "label": "November"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.026,
+        "label": "December"
+      }
+    ],
+    "2013": [
+      {
+        "mean": 1.0057,
+        "std": 0.0261,
+        "label": "January"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0291,
+        "label": "February"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0271,
+        "label": "March"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0292,
+        "label": "April"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.025,
+        "label": "May"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0316,
+        "label": "June"
+      },
+      {
+        "mean": 1.0064,
+        "std": 0.029,
+        "label": "July"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.028,
+        "label": "August"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0262,
+        "label": "September"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0244,
+        "label": "October"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0288,
+        "label": "November"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0276,
+        "label": "December"
+      }
+    ],
+    "2014": [
+      {
+        "mean": 1.0054,
+        "std": 0.0251,
+        "label": "January"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0286,
+        "label": "February"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.032,
+        "label": "March"
+      },
+      {
+        "mean": 1.0052,
+        "std": 0.0219,
+        "label": "April"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0282,
+        "label": "May"
+      },
+      {
+        "mean": 1.0051,
+        "std": 0.0208,
+        "label": "June"
+      },
+      {
+        "mean": 1.0051,
+        "std": 0.0231,
+        "label": "July"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0279,
+        "label": "August"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0249,
+        "label": "September"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0253,
+        "label": "October"
+      },
+      {
+        "mean": 1.0062,
+        "std": 0.0272,
+        "label": "November"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0254,
+        "label": "December"
+      }
+    ],
+    "2015": [
+      {
+        "mean": 1.0056,
+        "std": 0.0246,
+        "label": "January"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0266,
+        "label": "February"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0251,
+        "label": "March"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0244,
+        "label": "April"
+      },
+      {
+        "mean": 1.0052,
+        "std": 0.0215,
+        "label": "May"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0237,
+        "label": "June"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0269,
+        "label": "July"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0262,
+        "label": "August"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0239,
+        "label": "September"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0251,
+        "label": "October"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0248,
+        "label": "November"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0257,
+        "label": "December"
+      }
+    ],
+    "2016": [
+      {
+        "mean": 1.0058,
+        "std": 0.0291,
+        "label": "January"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0281,
+        "label": "February"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.028,
+        "label": "March"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0297,
+        "label": "April"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0288,
+        "label": "May"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0254,
+        "label": "June"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0281,
+        "label": "July"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.027,
+        "label": "August"
+      },
+      {
+        "mean": 1.0052,
+        "std": 0.0236,
+        "label": "September"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0244,
+        "label": "October"
+      },
+      {
+        "mean": 1.0064,
+        "std": 0.0305,
+        "label": "November"
+      },
+      {
+        "mean": 1.0052,
+        "std": 0.0254,
+        "label": "December"
+      }
+    ],
+    "2017": [
+      {
+        "mean": 1.0051,
+        "std": 0.0242,
+        "label": "January"
+      },
+      {
+        "mean": 1.0053,
+        "std": 0.0243,
+        "label": "February"
+      },
+      {
+        "mean": 1.0052,
+        "std": 0.0251,
+        "label": "March"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.026,
+        "label": "April"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0268,
+        "label": "May"
+      },
+      {
+        "mean": 1.0053,
+        "std": 0.0252,
+        "label": "June"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0274,
+        "label": "July"
+      },
+      {
+        "mean": 1.0053,
+        "std": 0.0257,
+        "label": "August"
+      },
+      {
+        "mean": 1.0055,
+        "std": 0.0259,
+        "label": "September"
+      },
+      {
+        "mean": 1.0053,
+        "std": 0.0253,
+        "label": "October"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0295,
+        "label": "November"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0255,
+        "label": "December"
+      }
+    ],
+    "2018": [
+      {
+        "mean": 1.0058,
+        "std": 0.0285,
+        "label": "January"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0255,
+        "label": "February"
+      },
+      {
+        "mean": 1.0056,
+        "std": 0.0266,
+        "label": "March"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0275,
+        "label": "April"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0298,
+        "label": "May"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.029,
+        "label": "June"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0272,
+        "label": "July"
+      },
+      {
+        "mean": 1.0054,
+        "std": 0.0282,
+        "label": "August"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0265,
+        "label": "September"
+      },
+      {
+        "mean": 1.006,
+        "std": 0.0285,
+        "label": "October"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0293,
+        "label": "November"
+      },
+      {
+        "mean": 1.0062,
+        "std": 0.0295,
+        "label": "December"
+      }
+    ],
+    "2019": [
+      {
+        "mean": 1.0059,
+        "std": 0.0295,
+        "label": "January"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0277,
+        "label": "February"
+      },
+      {
+        "mean": 1.0064,
+        "std": 0.0305,
+        "label": "March"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0293,
+        "label": "April"
+      },
+      {
+        "mean": 1.0059,
+        "std": 0.0286,
+        "label": "May"
+      },
+      {
+        "mean": 1.0063,
+        "std": 0.0304,
+        "label": "June"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0274,
+        "label": "July"
+      },
+      {
+        "mean": 1.0066,
+        "std": 0.0323,
+        "label": "August"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0291,
+        "label": "September"
+      },
+      {
+        "mean": 1.0061,
+        "std": 0.0292,
+        "label": "October"
+      },
+      {
+        "mean": 1.0065,
+        "std": 0.0318,
+        "label": "November"
+      },
+      {
+        "mean": 1.0069,
+        "std": 0.035,
+        "label": "December"
+      }
+    ],
+    "2020": [
+      {
+        "mean": 1.0063,
+        "std": 0.0312,
+        "label": "January"
+      },
+      {
+        "mean": 1.0058,
+        "std": 0.0278,
+        "label": "February"
+      },
+      {
+        "mean": 1.0057,
+        "std": 0.0253,
+        "label": "March"
+      }
+    ]
+  }
+}

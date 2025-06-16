@@ -12,10 +12,10 @@ export function Sensory({
   back,
   selectedYear,
   setSelectedYear,
-  selectedCategories,
-  setSelectedCategories,
-  selectedLabels,
-  setSelectedLabels,
+  selectedExtraDS,
+  setSelectedExtraDS,
+  selectedM4ADS,
+  setSelectedM4ADS,
 }) {
   const controls = useAnimation();
   const animationRef = useRef(false); // Para controlar el ciclo
@@ -34,9 +34,12 @@ export function Sensory({
   };
 
   return (
-    <div className="flex max-w-full h-auto min-h-0 max-h-none">
-      <div className="bg-cyan-800 w-fit max-h-full min-h-screen flex flex-col justify-start items-center pt-4 relative">
-        <div className="sticky top-4">
+    <div className="flex min-w-full h-screen min-h-0 max-h-none">
+      <div
+        id="sideBar"
+        className="bg-cyan-800 w-fit flex flex-col justify-start h-full items-center pt-4 relative overflow-y-auto"
+      >
+        <div>
           <Link
             className="hover:cursor-pointer hover:bg-white rounded-lg"
             to="/music_4_all"
@@ -52,8 +55,10 @@ export function Sensory({
             <FilterSidebar
               selectedYear={selectedYear}
               setSelectedYear={setSelectedYear}
-              selectedLabels={selectedLabels}
-              setSelectedLabels={setSelectedLabels}
+              selectedExtraDS={selectedExtraDS}
+              setSelectedExtraDS={setSelectedExtraDS}
+              selectedM4ADS={selectedM4ADS}
+              setSelectedM4ADS={setSelectedM4ADS}
             />
           </div>
         </div>

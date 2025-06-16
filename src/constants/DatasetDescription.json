@@ -1,0 +1,120 @@
+{
+  "extrasensory": [
+    {
+      "campo": "raw_acc",
+      "etiqueta": "Acelerómetro 📱",
+      "descripción": "Datos brutos del acelerómetro del teléfono. Representa aceleración en bruto sin procesar ni separar gravedad del movimiento del usuario."
+    },
+    {
+      "campo": "proc_gyro",
+      "etiqueta": "Giroscopio procesado 🔄",
+      "descripción": "Mediciones del giroscopio del teléfono procesadas por el sistema operativo para reducir el 'drift' (deriva)."
+    },
+    {
+      "campo": "raw_magnet",
+      "etiqueta": "Magnetómetro 📍",
+      "descripción": "Lecturas crudas del magnetómetro del teléfono. Representan el campo magnético sin correcciones aplicadas."
+    },
+    {
+      "campo": "watch_acceleration",
+      "etiqueta": "Acelerómetro del reloj ⌚",
+      "descripción": "Datos de aceleración del reloj inteligente, útiles para detectar movimientos del brazo o muñeca."
+    },
+    {
+      "campo": "watch_heading",
+      "etiqueta": "Brújula del reloj 🧭",
+      "descripción": "Dirección del usuario (heading) detectada por la brújula del reloj inteligente."
+    },
+    {
+      "campo": "location",
+      "etiqueta": "Ubicación offline 🌍",
+      "descripción": "Características derivadas de los datos de ubicación (latitud, longitud, altitud) procesados de forma offline para describir el movimiento relativo en un minuto."
+    },
+    {
+      "campo": "location_quick_features",
+      "etiqueta": "Ubicación rápida ⚡",
+      "descripción": "Características simples calculadas en el teléfono durante la recolección de datos, disponibles incluso si el usuario ocultó su ubicación exacta."
+    },
+    {
+      "campo": "audio_naive",
+      "etiqueta": "Audio (MFCCs) 🎙️",
+      "descripción": "Promedios y desviaciones estándar de los 13 coeficientes MFCC extraídos de grabaciones de ~20 segundos del micrófono del teléfono."
+    },
+    {
+      "campo": "discrete",
+      "etiqueta": "Estado del teléfono 📲",
+      "descripción": "Indicadores binarios del estado del dispositivo, como 'pantalla encendida', modo de carga, y también variables relacionadas con la hora del día."
+    },
+    {
+      "campo": "lf_measurements",
+      "etiqueta": "Sensores de baja frecuencia 🐢",
+      "descripción": "Datos de sensores que se miden con menor frecuencia, una sola vez por ejemplo (como presión barométrica, temperatura, etc.)."
+    }
+  ],
+  "music4all": [
+    {
+      "campo": "Audio",
+      "etiqueta": "Características acústicas 🎧",
+      "descripción": "Representaciones derivadas del contenido sonoro de las pistas, incluyendo espectro, MFCCs, i-vectores, pitch, prosodia y otros descriptores extraídos con herramientas como OpenSMILE y Essentia.",
+      "files": [
+        "id_blf_correlation.tsv.bz2",
+        "id_blf_deltaspectral.tsv.bz2",
+        "id_blf_logfluc.tsv.bz2",
+        "id_blf_spectral.tsv.bz2",
+        "id_blf_spectralcontrast.tsv.bz2",
+        "id_blf_vardeltaspectral.tsv.bz2",
+        "id_chroma_bow.tsv.bz2",
+        "id_compare_audspec_stats.tsv.bz2",
+        "id_compare_f0_stats.tsv.bz2",
+        "id_compare_hnr_stats.tsv.bz2",
+        "id_compare_jitter_stats.tsv.bz2",
+        "id_compare_mfcc_stats.tsv.bz2",
+        "id_compare_pcm_stats.tsv.bz2",
+        "id_compare_shimmer_stats.tsv.bz2",
+        "id_compare_voice_stats.tsv.bz2",
+        "id_emobase_bow.tsv.bz2",
+        "id_emobase_f0_stats.tsv.bz2",
+        "id_emobase_lsp_stats.tsv.bz2",
+        "id_emobase_mfcc_stats.tsv.bz2",
+        "id_emobase_pcm_stats.tsv.bz2",
+        "id_emobase_voice_stats.tsv.bz2",
+        "id_essentia.tsv.bz2",
+        "id_ivec1024.tsv.bz2",
+        "id_ivec256.tsv.bz2",
+        "id_ivec512.tsv.bz2",
+        "id_mfcc_bow.tsv.bz2",
+        "id_mfcc_stats.tsv.bz2"
+      ]
+    },
+    {
+      "campo": "EMD",
+      "etiqueta": "Descripción emocional textual ❤️📝",
+      "descripción": "Representaciones basadas en el análisis de letras de canciones, incluyendo procesamiento lingüístico, embeddings semánticos y puntuaciones afectivas como valencia, activación y dominancia.",
+      "files": [
+        "processed_lyrics.tar.gz",
+        "id_lyrics_sentiment_functionals.tsv.bz2",
+        "id_lyrics_tf-idf.tsv.bz2",
+        "id_lyrics_word2vec.tsv.bz2",
+        "id_vad_bow.tsv.bz2"
+      ]
+    },
+    {
+      "campo": "EGC",
+      "etiqueta": "Información de género 🏷️🎼",
+      "descripción": "Etiquetas de géneros musicales asignadas a las pistas y representadas mediante TF-IDF a partir de anotaciones de la base de datos y taxonomías como Every Noise at Once.",
+      "files": ["id_genres_tf-idf.tsv.bz2"]
+    },
+    {
+      "campo": "UGC",
+      "etiqueta": "Contenido generado por usuarios 👥💬",
+      "descripción": "Etiquetas o 'tags' obtenidas de servicios como Last.fm, representadas directamente o mediante TF-IDF, reflejan percepciones o descripciones subjetivas.",
+      "files": ["id_tags_dict.tsv.bz2", "id_tags_tf-idf.tsv2.bz2"]
+    },
+    {
+      "campo": "DC",
+      "etiqueta": "Características visuales de videos 🎥🧠",
+      "descripción": "Representaciones visuales extraídas de cuadros de video de YouTube usando redes convolucionales preentrenadas como Inception, ResNet y VGG19.",
+      "files": ["id_incp.tsv.bz2", "id_resnet.tsv.bz2", "id_vgg19.tsv.bz2"]
+    }
+  ]
+}

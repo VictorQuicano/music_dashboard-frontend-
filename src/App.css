@@ -8,3 +8,17 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+
+#root::-webkit-scrollbar {
+  width: 16px;
+}
+
+#root::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+#root::-webkit-scrollbar-thumb {
+  background-color: #d4aa70;
+  border-radius: 100px;
+}

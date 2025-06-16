@@ -4,24 +4,28 @@ const PREFIX_DATA = [
   {
     prefix: "GENERIC",
     code: "ALL_CAPS",
+    color: "#4CAF50",
     description:
       "Etiquetas <strong>originales del usuario</strong> desde la app móvil.",
   },
   {
     prefix: "OR",
     code: "OR_",
+    color: "#FF9800",
     description:
       "Etiquetas <strong>sintetizadas</strong>, combinación lógica (ej. <code>OR_SITTING_OR_LYING</code>).",
   },
   {
     prefix: "LOC",
     code: "LOC_",
+    color: "#E91E63",
     description:
       "Etiquetas inferidas <strong>según la ubicación GPS</strong> (ej. <code>LOC_home</code>, <code>LOC_beach</code>).",
   },
   {
     prefix: "FIX",
     code: "FIX_",
+    color: "#2196F3",
     description:
       "Etiquetas <strong>corregidas por investigadores</strong> por errores del usuario.",
   },
@@ -55,7 +59,10 @@ export const PrefixedLegend = () => {
           placement="top"
           hasArrow
         >
-          <div className="px-4 py-1 font-semibold bg-cyan-600 hover:bg-cyan-500  border-2 text-center cursor-help rounded-2xl min-w-[100px] mb-2 text-sm">
+          <div
+            className="px-4 py-1 font-semibold border-2 text-center cursor-help rounded-2xl min-w-[100px] mb-2 text-sm"
+            style={{ backgroundColor: item.color }}
+          >
             {item.prefix}
           </div>
         </Tooltip>

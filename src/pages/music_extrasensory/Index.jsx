@@ -6,9 +6,11 @@ import topUserLabelSummary from "@/constants/topUserLabelSummary";
 import labelsGeneral from "@/constants/labelsGeneral";
 import columnasLabel from "@/constants/columnasLabel";
 
-import TreemapChart from "@/components/custom/sensoryGraphs/TreemapChart";
+import Treemap from "@/components/custom/sensoryGraphs/Treemap";
 import resumenAnual from "@/constants/resumenAnual";
 import { PrefixedLegend } from "@/components/custom/PrefixedLegend";
+import InfoCard from "./cards/InfoCard";
+import MasterCard from "./cards/MasterCard";
 
 export function Index() {
   const back = {
@@ -100,8 +102,8 @@ export function Index() {
       // Ya está agrupado por categoría y solo reemplazamos nombres
       newLabelsPeriod = topUserLabelSummary.labels_global.map((entry) => {
         const categoriaNombre =
-          labelsGeneral[entry.categoria] || entry.categoria;
-
+          labelsGeneral[entry.categoria]["etiqueta"] || entry.categoria;
+        const categoryColor = labelsGeneral[entry.categoria]["color"];
         const etiquetas = {};
         for (const [labelKey, labelData] of Object.entries(entry.labels)) {
           const nombreLabel = columnasLabel[labelKey] || labelKey;
@@ -110,6 +112,7 @@ export function Index() {
 
         return {
           categoria: categoriaNombre,
+          color: categoryColor,
           labels: etiquetas,
         };
       });
@@ -121,12 +124,16 @@ export function Index() {
 
       for (const [label, data] of Object.entries(labelsByYear)) {
         const categoriaKey = getCategoriaFromLabel(label);
-        const categoriaNombre = labelsGeneral[categoriaKey] || categoriaKey;
+        const categoriaNombre =
+          labelsGeneral[categoriaKey]["etiqueta"] || categoriaKey;
+        const categoryColor = labelsGeneral[entry.categoria]["color"];
+
         const nombreLabel = columnasLabel[label] || label;
 
         if (!groupedByCategoria[categoriaNombre]) {
           groupedByCategoria[categoriaNombre] = {
             categoria: categoriaNombre,
+            color: categoryColor,
             labels: {},
           };
         }
@@ -191,37 +198,32 @@ export function Index() {
     setFish_2(newFishArray);
   };
 
+  const [selectedExtraDS, setSelectedExtraDS] = useState(["raw_acc"]);
+  const [selectedM4ADS, setSelectedM4ADS] = useState([]);
+
   // Efecto que se ejecuta cuando cambian los estados dependientes
   useEffect(() => {
     updateFishArray();
-    updateLabelsPeriod();
+    //updateLabelsPeriod();
   }, [selectedYear, selectedCategories, selectedLabels]); // Dependencias
 
   return (
     <Layout
-      title="MusicExtrasensory"
+      title="Music -Extrasensory"
       back={back}
       selectedYear={selectedYear}
       setSelectedYear={setSelectedYear}
-      selectedCategories={selectedCategories}
-      setSelectedCategories={setSelectedCategories}
-      selectedLabels={selectedLabels}
-      setSelectedLabels={setSelectedLabels}
+      selectedExtraDS={selectedExtraDS}
+      setSelectedExtraDS={setSelectedExtraDS}
+      selectedM4ADS={selectedM4ADS}
+      setSelectedM4ADS={setSelectedM4ADS}
     >
-      <div className="grid grid-cols-3">
-        <div className="w-full flex flex-col bg-[#282b33] rounded-2xl p-4">
-          <h4>
-            Número de registros de usuarios:{" "}
-            {selectedYear === "general" ? "GENERAL" : `AÑO ${selectedYear}`}
-          </h4>
-
-          <HorizontalBarChart data={fish_2} />
-        </div>
-        <div className="w-full flex flex-col bg-[#282b33] rounded-2xl p-4 col-span-2 max-h-[500px]">
-          <PrefixedLegend />
-          <TreemapChart rawData={labelsPeriod} />
-        </div>
-      </div>
+      <InfoCard selectedYear={selectedYear} />
+      <MasterCard
+        selectedExtraDS={selectedExtraDS}
+        selectedM4ADS={selectedM4ADS}
+        selectedYear={selectedYear}
+      ></MasterCard>
     </Layout>
   );
 }
