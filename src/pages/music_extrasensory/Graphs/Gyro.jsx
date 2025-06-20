@@ -9,18 +9,17 @@ export default function Gyro({ selectedYear }) {
   const [meanY, setMeanY] = useState([]);
   const [meanZ, setMeanZ] = useState([]);
 
-  const returnToArray = (data, index) => {
-    const allMeans = [];
+  const returnToArray = (data, key) => {
+    const allValues = [];
 
     for (const year in data.by_year) {
-      const statsArray = data.by_year[year];
-      for (const stats of statsArray) {
-        if (stats.mean) {
-          allMeans.push(...stats[index]);
-        }
+      const stats = data.by_year[year];
+      if (stats[key]) {
+        allValues.push(...stats[key]);
       }
     }
-    return allMeans;
+
+    return allValues;
   };
 
   useEffect(() => {
@@ -30,10 +29,10 @@ export default function Gyro({ selectedYear }) {
       setMeanY(returnToArray(Data, "mean_y"));
       setMeanZ(returnToArray(Data, "mean_z"));
     } else {
-      setMean(Data.by_year[selectedYear][0]["mean"]);
-      setMeanX(Data.by_year[selectedYear][0]["mean_x"]);
-      setMeanY(Data.by_year[selectedYear][0]["mean_y"]);
-      setMeanZ(Data.by_year[selectedYear][0]["mean_z"]);
+      setMean(Data.by_year[selectedYear]["mean"]);
+      setMeanX(Data.by_year[selectedYear]["mean_x"]);
+      setMeanY(Data.by_year[selectedYear]["mean_y"]);
+      setMeanZ(Data.by_year[selectedYear]["mean_z"]);
     }
   }, [selectedYear]);
 

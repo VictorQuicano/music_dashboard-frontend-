@@ -1,0 +1,1143 @@
+{
+  "general": [
+    {
+      "mean": -4.265,
+      "std": 1.672,
+      "label": "MFCC 0"
+    },
+    {
+      "mean": -0.7679,
+      "std": 0.7681,
+      "label": "MFCC 1"
+    },
+    {
+      "mean": -1.4441,
+      "std": 0.5987,
+      "label": "MFCC 2"
+    },
+    {
+      "mean": -0.4051,
+      "std": 0.4197,
+      "label": "MFCC 3"
+    },
+    {
+      "mean": -1.1786,
+      "std": 0.3508,
+      "label": "MFCC 4"
+    },
+    {
+      "mean": -0.4311,
+      "std": 0.3301,
+      "label": "MFCC 5"
+    },
+    {
+      "mean": -0.954,
+      "std": 0.2927,
+      "label": "MFCC 6"
+    },
+    {
+      "mean": -0.4452,
+      "std": 0.2747,
+      "label": "MFCC 7"
+    },
+    {
+      "mean": -0.7268,
+      "std": 0.2631,
+      "label": "MFCC 8"
+    },
+    {
+      "mean": -0.4042,
+      "std": 0.2488,
+      "label": "MFCC 9"
+    },
+    {
+      "mean": -0.6051,
+      "std": 0.2396,
+      "label": "MFCC 10"
+    },
+    {
+      "mean": -0.356,
+      "std": 0.2348,
+      "label": "MFCC 11"
+    },
+    {
+      "mean": -0.5098,
+      "std": 0.2294,
+      "label": "MFCC 12"
+    }
+  ],
+  "by_year": {
+    "2005": [
+      {
+        "mean": -6.2912,
+        "std": 2.0236,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.3817,
+        "std": 0.9141,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.654,
+        "std": 0.6942,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.4921,
+        "std": 0.4814,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.2795,
+        "std": 0.3962,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.5218,
+        "std": 0.3724,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -1.0069,
+        "std": 0.3257,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4738,
+        "std": 0.304,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7461,
+        "std": 0.2908,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.4299,
+        "std": 0.2728,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.6354,
+        "std": 0.2605,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3813,
+        "std": 0.2553,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.5343,
+        "std": 0.2476,
+        "label": "MFCC 12"
+      }
+    ],
+    "2006": [
+      {
+        "mean": -5.7511,
+        "std": 1.9625,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.6041,
+        "std": 0.8798,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.7031,
+        "std": 0.6731,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.4926,
+        "std": 0.4628,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.2971,
+        "std": 0.3823,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.521,
+        "std": 0.3568,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.9992,
+        "std": 0.3152,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4613,
+        "std": 0.2976,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7558,
+        "std": 0.283,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.4194,
+        "std": 0.2666,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.6164,
+        "std": 0.2562,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3662,
+        "std": 0.2495,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.5215,
+        "std": 0.2442,
+        "label": "MFCC 12"
+      }
+    ],
+    "2007": [
+      {
+        "mean": -6.2056,
+        "std": 2.0491,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.5373,
+        "std": 0.9159,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.7555,
+        "std": 0.6966,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.5118,
+        "std": 0.4773,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.3188,
+        "std": 0.3948,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.5466,
+        "std": 0.3685,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -1.0156,
+        "std": 0.3239,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.47,
+        "std": 0.3057,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7582,
+        "std": 0.2906,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.428,
+        "std": 0.2731,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.627,
+        "std": 0.2618,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3721,
+        "std": 0.2551,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.5323,
+        "std": 0.2492,
+        "label": "MFCC 12"
+      }
+    ],
+    "2008": [
+      {
+        "mean": -6.4552,
+        "std": 2.0905,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.3026,
+        "std": 0.9357,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.7429,
+        "std": 0.7182,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.4883,
+        "std": 0.4927,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.2743,
+        "std": 0.4044,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.5244,
+        "std": 0.3798,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -1.0078,
+        "std": 0.3329,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4782,
+        "std": 0.3105,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7639,
+        "std": 0.2969,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.4373,
+        "std": 0.2789,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.638,
+        "std": 0.2669,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.385,
+        "std": 0.2609,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.5388,
+        "std": 0.2532,
+        "label": "MFCC 12"
+      }
+    ],
+    "2009": [
+      {
+        "mean": -6.4685,
+        "std": 2.0948,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.3295,
+        "std": 0.94,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.7558,
+        "std": 0.7167,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.5046,
+        "std": 0.492,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.2994,
+        "std": 0.4027,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.5404,
+        "std": 0.3791,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -1.0134,
+        "std": 0.3326,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4794,
+        "std": 0.3114,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7668,
+        "std": 0.2973,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.4364,
+        "std": 0.2788,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.6353,
+        "std": 0.267,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3817,
+        "std": 0.2612,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.5372,
+        "std": 0.2533,
+        "label": "MFCC 12"
+      }
+    ],
+    "2010": [
+      {
+        "mean": -4.2492,
+        "std": 1.671,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.7713,
+        "std": 0.7705,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.4733,
+        "std": 0.5978,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.4172,
+        "std": 0.4185,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.1956,
+        "std": 0.3494,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.4431,
+        "std": 0.3288,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.9571,
+        "std": 0.2924,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4428,
+        "std": 0.2751,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7325,
+        "std": 0.2635,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.402,
+        "std": 0.2496,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.6006,
+        "std": 0.24,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3529,
+        "std": 0.2352,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.5074,
+        "std": 0.2296,
+        "label": "MFCC 12"
+      }
+    ],
+    "2011": [
+      {
+        "mean": -3.0723,
+        "std": 1.4506,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.8988,
+        "std": 0.6811,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.2846,
+        "std": 0.5435,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.3462,
+        "std": 0.3868,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.0995,
+        "std": 0.3258,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.3677,
+        "std": 0.308,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.9153,
+        "std": 0.2753,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4246,
+        "std": 0.2569,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7063,
+        "std": 0.2472,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.384,
+        "std": 0.2349,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.589,
+        "std": 0.2272,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3409,
+        "std": 0.2228,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.4949,
+        "std": 0.218,
+        "label": "MFCC 12"
+      }
+    ],
+    "2012": [
+      {
+        "mean": -1.8236,
+        "std": 1.247,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -1.1721,
+        "std": 0.5916,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.1761,
+        "std": 0.4842,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.3054,
+        "std": 0.3486,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.0755,
+        "std": 0.2957,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.3337,
+        "std": 0.2808,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.8964,
+        "std": 0.2534,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4062,
+        "std": 0.239,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.6979,
+        "std": 0.2299,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.3672,
+        "std": 0.2199,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.5665,
+        "std": 0.2142,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.324,
+        "std": 0.2104,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.4781,
+        "std": 0.2078,
+        "label": "MFCC 12"
+      }
+    ],
+    "2013": [
+      {
+        "mean": -3.5519,
+        "std": 1.5446,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.8743,
+        "std": 0.7144,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.3486,
+        "std": 0.564,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.3706,
+        "std": 0.3985,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.1414,
+        "std": 0.3339,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.3976,
+        "std": 0.3157,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.936,
+        "std": 0.2805,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4349,
+        "std": 0.2633,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7157,
+        "std": 0.2527,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.3957,
+        "std": 0.2395,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.597,
+        "std": 0.2312,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3486,
+        "std": 0.2266,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.5004,
+        "std": 0.2219,
+        "label": "MFCC 12"
+      }
+    ],
+    "2014": [
+      {
+        "mean": -3.2668,
+        "std": 1.4821,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.9373,
+        "std": 0.6932,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.319,
+        "std": 0.5492,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.3613,
+        "std": 0.3899,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.1289,
+        "std": 0.3275,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.3897,
+        "std": 0.3098,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.9302,
+        "std": 0.2759,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.429,
+        "std": 0.2598,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7101,
+        "std": 0.2492,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.3895,
+        "std": 0.2363,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.5932,
+        "std": 0.2282,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3443,
+        "std": 0.2239,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.4954,
+        "std": 0.2197,
+        "label": "MFCC 12"
+      }
+    ],
+    "2015": [
+      {
+        "mean": -2.9536,
+        "std": 1.43,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -1.0298,
+        "std": 0.669,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.2801,
+        "std": 0.53,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.3497,
+        "std": 0.3776,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.1187,
+        "std": 0.3193,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.374,
+        "std": 0.3013,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.9216,
+        "std": 0.2694,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4223,
+        "std": 0.2543,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7092,
+        "std": 0.2437,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.3848,
+        "std": 0.232,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.5853,
+        "std": 0.2245,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3402,
+        "std": 0.2203,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.4934,
+        "std": 0.2167,
+        "label": "MFCC 12"
+      }
+    ],
+    "2016": [
+      {
+        "mean": -3.8553,
+        "std": 1.5854,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.8546,
+        "std": 0.7312,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.3619,
+        "std": 0.5736,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.3851,
+        "std": 0.403,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.1554,
+        "std": 0.3393,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.4099,
+        "std": 0.3193,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.9455,
+        "std": 0.2837,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4418,
+        "std": 0.2665,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7206,
+        "std": 0.2553,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.4004,
+        "std": 0.2421,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.601,
+        "std": 0.2334,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3545,
+        "std": 0.2288,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.5072,
+        "std": 0.2236,
+        "label": "MFCC 12"
+      }
+    ],
+    "2017": [
+      {
+        "mean": -3.16,
+        "std": 1.4602,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.9377,
+        "std": 0.6837,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.283,
+        "std": 0.5397,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.3548,
+        "std": 0.3843,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.1078,
+        "std": 0.3255,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.3706,
+        "std": 0.3066,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.9163,
+        "std": 0.2741,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4271,
+        "std": 0.2569,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7087,
+        "std": 0.2467,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.3866,
+        "std": 0.2346,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.5883,
+        "std": 0.2267,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3409,
+        "std": 0.2226,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.4963,
+        "std": 0.2177,
+        "label": "MFCC 12"
+      }
+    ],
+    "2018": [
+      {
+        "mean": -3.8259,
+        "std": 1.5816,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.848,
+        "std": 0.7319,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.3549,
+        "std": 0.5734,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.3787,
+        "std": 0.4049,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.1382,
+        "std": 0.341,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.398,
+        "std": 0.3207,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.9382,
+        "std": 0.2846,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4413,
+        "std": 0.2669,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7157,
+        "std": 0.2558,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.3998,
+        "std": 0.2423,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.6018,
+        "std": 0.2334,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3531,
+        "std": 0.2294,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.5064,
+        "std": 0.2241,
+        "label": "MFCC 12"
+      }
+    ],
+    "2019": [
+      {
+        "mean": -4.4037,
+        "std": 1.6829,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.7932,
+        "std": 0.7749,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.4251,
+        "std": 0.6006,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.4033,
+        "std": 0.4216,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.1752,
+        "std": 0.3534,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.4286,
+        "std": 0.3321,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.9577,
+        "std": 0.2937,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4527,
+        "std": 0.2757,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7215,
+        "std": 0.2639,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.4098,
+        "std": 0.2491,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.6109,
+        "std": 0.2396,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.3607,
+        "std": 0.235,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.5125,
+        "std": 0.2293,
+        "label": "MFCC 12"
+      }
+    ],
+    "2020": [
+      {
+        "mean": -4.3672,
+        "std": 1.6813,
+        "label": "MFCC 0"
+      },
+      {
+        "mean": -0.8171,
+        "std": 0.7741,
+        "label": "MFCC 1"
+      },
+      {
+        "mean": -1.4345,
+        "std": 0.5999,
+        "label": "MFCC 2"
+      },
+      {
+        "mean": -0.4069,
+        "std": 0.4216,
+        "label": "MFCC 3"
+      },
+      {
+        "mean": -1.1804,
+        "std": 0.3526,
+        "label": "MFCC 4"
+      },
+      {
+        "mean": -0.4287,
+        "std": 0.3316,
+        "label": "MFCC 5"
+      },
+      {
+        "mean": -0.961,
+        "std": 0.2932,
+        "label": "MFCC 6"
+      },
+      {
+        "mean": -0.4538,
+        "std": 0.275,
+        "label": "MFCC 7"
+      },
+      {
+        "mean": -0.7218,
+        "std": 0.2637,
+        "label": "MFCC 8"
+      },
+      {
+        "mean": -0.4104,
+        "std": 0.2488,
+        "label": "MFCC 9"
+      },
+      {
+        "mean": -0.6106,
+        "std": 0.2391,
+        "label": "MFCC 10"
+      },
+      {
+        "mean": -0.361,
+        "std": 0.2349,
+        "label": "MFCC 11"
+      },
+      {
+        "mean": -0.5114,
+        "std": 0.2296,
+        "label": "MFCC 12"
+      }
+    ]
+  }
+}

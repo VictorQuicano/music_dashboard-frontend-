@@ -46,9 +46,9 @@
       "descripción": "Indicadores binarios del estado del dispositivo, como 'pantalla encendida', modo de carga, y también variables relacionadas con la hora del día."
     },
     {
-      "campo": "lf_measurements",
-      "etiqueta": "Sensores de baja frecuencia 🐢",
-      "descripción": "Datos de sensores que se miden con menor frecuencia, una sola vez por ejemplo (como presión barométrica, temperatura, etc.)."
+      "campo": "label",
+      "etiqueta": "Etiquetas 🐢",
+      "descripción": "Labels colocados por los usuario sobre sus actividades cotidianas."
     }
   ],
   "music4all": [

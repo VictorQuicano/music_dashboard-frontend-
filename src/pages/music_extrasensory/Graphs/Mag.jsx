@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function Gyro({ selectedYear }) {
   const Data = mag;
-  console.log(Data);
+  //console.log(Data);
   const [mean, setMean] = useState([]);
   const [meanX, setMeanX] = useState([]);
   const [meanY, setMeanY] = useState([]);
@@ -30,10 +30,10 @@ export default function Gyro({ selectedYear }) {
       setMeanY(returnToArray(Data, "mean_y"));
       setMeanZ(returnToArray(Data, "mean_z"));
     } else {
-      setMean(Data.by_year[selectedYear][0]["mean"]);
-      setMeanX(Data.by_year[selectedYear][0]["mean_x"]);
-      setMeanY(Data.by_year[selectedYear][0]["mean_y"]);
-      setMeanZ(Data.by_year[selectedYear][0]["mean_z"]);
+      setMean(Data.by_year[selectedYear]["mean"]);
+      setMeanX(Data.by_year[selectedYear]["mean_x"]);
+      setMeanY(Data.by_year[selectedYear]["mean_y"]);
+      setMeanZ(Data.by_year[selectedYear]["mean_z"]);
     }
   }, [selectedYear]);
 

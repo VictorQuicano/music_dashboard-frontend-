@@ -1,0 +1,2299 @@
+{
+  "general": {
+    "app_state": [
+      {
+        "label": "is_active",
+        "count": 6885
+      },
+      {
+        "label": "is_inactive",
+        "count": 667
+      },
+      {
+        "label": "is_background",
+        "count": 663746
+      },
+      {
+        "label": "missing",
+        "count": 0
+      }
+    ],
+    "battery_plugged": [
+      {
+        "label": "is_ac",
+        "count": 0
+      },
+      {
+        "label": "is_usb",
+        "count": 0
+      },
+      {
+        "label": "is_wireless",
+        "count": 0
+      },
+      {
+        "label": "missing",
+        "count": 671298
+      }
+    ],
+    "battery_state": [
+      {
+        "label": "is_unknown",
+        "count": 0
+      },
+      {
+        "label": "is_unplugged",
+        "count": 313725
+      },
+      {
+        "label": "is_not_charging",
+        "count": 0
+      },
+      {
+        "label": "is_discharging",
+        "count": 0
+      },
+      {
+        "label": "is_charging",
+        "count": 175730
+      },
+      {
+        "label": "is_full",
+        "count": 181843
+      },
+      {
+        "label": "missing",
+        "count": 0
+      }
+    ],
+    "on_the_phone": [
+      {
+        "label": "is_False",
+        "count": 666774
+      },
+      {
+        "label": "is_True",
+        "count": 4524
+      },
+      {
+        "label": "missing",
+        "count": 0
+      }
+    ],
+
+    "wifi_status": [
+      {
+        "label": "is_not_reachable",
+        "count": 174667
+      },
+      {
+        "label": "is_reachable_via_wifi",
+        "count": 496631
+      },
+      {
+        "label": "is_reachable_via_wwan",
+        "count": 0
+      },
+      {
+        "label": "missing",
+        "count": 0
+      }
+    ],
+    "time_of_day": [
+      {
+        "label": "between0and6",
+        "count": 187461
+      },
+      {
+        "label": "between3and9",
+        "count": 238703
+      },
+      {
+        "label": "between6and12",
+        "count": 245693
+      },
+      {
+        "label": "between9and15",
+        "count": 248011
+      },
+      {
+        "label": "between12and18",
+        "count": 200602
+      },
+      {
+        "label": "between15and21",
+        "count": 97096
+      },
+      {
+        "label": "between18and24",
+        "count": 37542
+      },
+      {
+        "label": "between21and3",
+        "count": 123637
+      }
+    ]
+  },
+  "by_year": {
+    "2005": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 178
+        },
+        {
+          "label": "is_inactive",
+          "count": 14
+        },
+        {
+          "label": "is_background",
+          "count": 13485
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 13677
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 8267
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 3597
+        },
+        {
+          "label": "is_full",
+          "count": 1813
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 13566
+        },
+        {
+          "label": "is_True",
+          "count": 111
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 3657
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 10020
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 798
+        },
+        {
+          "label": "between3and9",
+          "count": 3150
+        },
+        {
+          "label": "between6and12",
+          "count": 5379
+        },
+        {
+          "label": "between9and15",
+          "count": 6061
+        },
+        {
+          "label": "between12and18",
+          "count": 5417
+        },
+        {
+          "label": "between15and21",
+          "count": 3397
+        },
+        {
+          "label": "between18and24",
+          "count": 2083
+        },
+        {
+          "label": "between21and3",
+          "count": 1101
+        }
+      ]
+    },
+    "2006": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 290
+        },
+        {
+          "label": "is_inactive",
+          "count": 33
+        },
+        {
+          "label": "is_background",
+          "count": 24018
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 24341
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 14113
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 6425
+        },
+        {
+          "label": "is_full",
+          "count": 3803
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 24204
+        },
+        {
+          "label": "is_True",
+          "count": 137
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 5627
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 18714
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 3695
+        },
+        {
+          "label": "between3and9",
+          "count": 5922
+        },
+        {
+          "label": "between6and12",
+          "count": 6322
+        },
+        {
+          "label": "between9and15",
+          "count": 7949
+        },
+        {
+          "label": "between12and18",
+          "count": 10547
+        },
+        {
+          "label": "between15and21",
+          "count": 9745
+        },
+        {
+          "label": "between18and24",
+          "count": 3777
+        },
+        {
+          "label": "between21and3",
+          "count": 1580
+        }
+      ]
+    },
+    "2007": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 422
+        },
+        {
+          "label": "is_inactive",
+          "count": 27
+        },
+        {
+          "label": "is_background",
+          "count": 34625
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 35074
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 20838
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 9522
+        },
+        {
+          "label": "is_full",
+          "count": 4714
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 34828
+        },
+        {
+          "label": "is_True",
+          "count": 246
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 8035
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 27039
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 3675
+        },
+        {
+          "label": "between3and9",
+          "count": 6929
+        },
+        {
+          "label": "between6and12",
+          "count": 8511
+        },
+        {
+          "label": "between9and15",
+          "count": 13063
+        },
+        {
+          "label": "between12and18",
+          "count": 17588
+        },
+        {
+          "label": "between15and21",
+          "count": 14151
+        },
+        {
+          "label": "between18and24",
+          "count": 5300
+        },
+        {
+          "label": "between21and3",
+          "count": 1443
+        }
+      ]
+    },
+    "2008": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 582
+        },
+        {
+          "label": "is_inactive",
+          "count": 65
+        },
+        {
+          "label": "is_background",
+          "count": 46501
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 47148
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 28386
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 12142
+        },
+        {
+          "label": "is_full",
+          "count": 6620
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 46719
+        },
+        {
+          "label": "is_True",
+          "count": 429
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 14034
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 33114
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 2545
+        },
+        {
+          "label": "between3and9",
+          "count": 11806
+        },
+        {
+          "label": "between6and12",
+          "count": 17969
+        },
+        {
+          "label": "between9and15",
+          "count": 17868
+        },
+        {
+          "label": "between12and18",
+          "count": 17590
+        },
+        {
+          "label": "between15and21",
+          "count": 16199
+        },
+        {
+          "label": "between18and24",
+          "count": 9044
+        },
+        {
+          "label": "between21and3",
+          "count": 1347
+        }
+      ]
+    },
+    "2009": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 625
+        },
+        {
+          "label": "is_inactive",
+          "count": 72
+        },
+        {
+          "label": "is_background",
+          "count": 48307
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 49004
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 29600
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 13007
+        },
+        {
+          "label": "is_full",
+          "count": 6397
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 48582
+        },
+        {
+          "label": "is_True",
+          "count": 422
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 13571
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 35433
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 2483
+        },
+        {
+          "label": "between3and9",
+          "count": 10419
+        },
+        {
+          "label": "between6and12",
+          "count": 16300
+        },
+        {
+          "label": "between9and15",
+          "count": 17961
+        },
+        {
+          "label": "between12and18",
+          "count": 19898
+        },
+        {
+          "label": "between15and21",
+          "count": 18273
+        },
+        {
+          "label": "between18and24",
+          "count": 10323
+        },
+        {
+          "label": "between21and3",
+          "count": 2375
+        }
+      ]
+    },
+    "2010": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 472
+        },
+        {
+          "label": "is_inactive",
+          "count": 45
+        },
+        {
+          "label": "is_background",
+          "count": 47345
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 47862
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 22339
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 13207
+        },
+        {
+          "label": "is_full",
+          "count": 12316
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 47615
+        },
+        {
+          "label": "is_True",
+          "count": 247
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 12157
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 35705
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 13581
+        },
+        {
+          "label": "between3and9",
+          "count": 15108
+        },
+        {
+          "label": "between6and12",
+          "count": 15532
+        },
+        {
+          "label": "between9and15",
+          "count": 14109
+        },
+        {
+          "label": "between12and18",
+          "count": 13904
+        },
+        {
+          "label": "between15and21",
+          "count": 10607
+        },
+        {
+          "label": "between18and24",
+          "count": 4845
+        },
+        {
+          "label": "between21and3",
+          "count": 10457
+        }
+      ]
+    },
+    "2011": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 389
+        },
+        {
+          "label": "is_inactive",
+          "count": 30
+        },
+        {
+          "label": "is_background",
+          "count": 42580
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 42999
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 17129
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 10757
+        },
+        {
+          "label": "is_full",
+          "count": 15113
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 42783
+        },
+        {
+          "label": "is_True",
+          "count": 216
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 11912
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 31087
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 16802
+        },
+        {
+          "label": "between3and9",
+          "count": 20642
+        },
+        {
+          "label": "between6and12",
+          "count": 17528
+        },
+        {
+          "label": "between9and15",
+          "count": 12373
+        },
+        {
+          "label": "between12and18",
+          "count": 8451
+        },
+        {
+          "label": "between15and21",
+          "count": 2159
+        },
+        {
+          "label": "between18and24",
+          "count": 218
+        },
+        {
+          "label": "between21and3",
+          "count": 10944
+        }
+      ]
+    },
+    "2012": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 199
+        },
+        {
+          "label": "is_inactive",
+          "count": 17
+        },
+        {
+          "label": "is_background",
+          "count": 26694
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 26910
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 8340
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 6769
+        },
+        {
+          "label": "is_full",
+          "count": 11801
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 26807
+        },
+        {
+          "label": "is_True",
+          "count": 103
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 6525
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 20385
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 14561
+        },
+        {
+          "label": "between3and9",
+          "count": 14626
+        },
+        {
+          "label": "between6and12",
+          "count": 7897
+        },
+        {
+          "label": "between9and15",
+          "count": 5392
+        },
+        {
+          "label": "between12and18",
+          "count": 4444
+        },
+        {
+          "label": "between15and21",
+          "count": 1306
+        },
+        {
+          "label": "between18and24",
+          "count": 8
+        },
+        {
+          "label": "between21and3",
+          "count": 8592
+        }
+      ]
+    },
+    "2013": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 389
+        },
+        {
+          "label": "is_inactive",
+          "count": 38
+        },
+        {
+          "label": "is_background",
+          "count": 37640
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 38067
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 15974
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 9444
+        },
+        {
+          "label": "is_full",
+          "count": 12649
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 37843
+        },
+        {
+          "label": "is_True",
+          "count": 224
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 9662
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 28405
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 13610
+        },
+        {
+          "label": "between3and9",
+          "count": 16557
+        },
+        {
+          "label": "between6and12",
+          "count": 13446
+        },
+        {
+          "label": "between9and15",
+          "count": 11849
+        },
+        {
+          "label": "between12and18",
+          "count": 10962
+        },
+        {
+          "label": "between15and21",
+          "count": 3893
+        },
+        {
+          "label": "between18and24",
+          "count": 49
+        },
+        {
+          "label": "between21and3",
+          "count": 7936
+        }
+      ]
+    },
+    "2014": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 323
+        },
+        {
+          "label": "is_inactive",
+          "count": 31
+        },
+        {
+          "label": "is_background",
+          "count": 32975
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 33329
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 13099
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 8709
+        },
+        {
+          "label": "is_full",
+          "count": 11521
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 33143
+        },
+        {
+          "label": "is_True",
+          "count": 186
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 8267
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 25062
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 12839
+        },
+        {
+          "label": "between3and9",
+          "count": 14355
+        },
+        {
+          "label": "between6and12",
+          "count": 11242
+        },
+        {
+          "label": "between9and15",
+          "count": 10451
+        },
+        {
+          "label": "between12and18",
+          "count": 9067
+        },
+        {
+          "label": "between15and21",
+          "count": 2566
+        },
+        {
+          "label": "between18and24",
+          "count": 181
+        },
+        {
+          "label": "between21and3",
+          "count": 8750
+        }
+      ]
+    },
+    "2015": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 366
+        },
+        {
+          "label": "is_inactive",
+          "count": 33
+        },
+        {
+          "label": "is_background",
+          "count": 41247
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 41646
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 15568
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 11216
+        },
+        {
+          "label": "is_full",
+          "count": 14862
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 41408
+        },
+        {
+          "label": "is_True",
+          "count": 238
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 10174
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 31472
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 17869
+        },
+        {
+          "label": "between3and9",
+          "count": 17917
+        },
+        {
+          "label": "between6and12",
+          "count": 13538
+        },
+        {
+          "label": "between9and15",
+          "count": 13115
+        },
+        {
+          "label": "between12and18",
+          "count": 10062
+        },
+        {
+          "label": "between15and21",
+          "count": 2817
+        },
+        {
+          "label": "between18and24",
+          "count": 177
+        },
+        {
+          "label": "between21and3",
+          "count": 11407
+        }
+      ]
+    },
+    "2016": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 539
+        },
+        {
+          "label": "is_inactive",
+          "count": 57
+        },
+        {
+          "label": "is_background",
+          "count": 53526
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 54122
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 23792
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 14160
+        },
+        {
+          "label": "is_full",
+          "count": 16170
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 53787
+        },
+        {
+          "label": "is_True",
+          "count": 335
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 13949
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 40173
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 17101
+        },
+        {
+          "label": "between3and9",
+          "count": 20651
+        },
+        {
+          "label": "between6and12",
+          "count": 22143
+        },
+        {
+          "label": "between9and15",
+          "count": 22441
+        },
+        {
+          "label": "between12and18",
+          "count": 14505
+        },
+        {
+          "label": "between15and21",
+          "count": 3564
+        },
+        {
+          "label": "between18and24",
+          "count": 373
+        },
+        {
+          "label": "between21and3",
+          "count": 10936
+        }
+      ]
+    },
+    "2017": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 558
+        },
+        {
+          "label": "is_inactive",
+          "count": 54
+        },
+        {
+          "label": "is_background",
+          "count": 62354
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 62966
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 25778
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 16099
+        },
+        {
+          "label": "is_full",
+          "count": 21089
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 62638
+        },
+        {
+          "label": "is_True",
+          "count": 328
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 17092
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 45874
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 24045
+        },
+        {
+          "label": "between3and9",
+          "count": 27228
+        },
+        {
+          "label": "between6and12",
+          "count": 26991
+        },
+        {
+          "label": "between9and15",
+          "count": 22510
+        },
+        {
+          "label": "between12and18",
+          "count": 11727
+        },
+        {
+          "label": "between15and21",
+          "count": 1559
+        },
+        {
+          "label": "between18and24",
+          "count": 203
+        },
+        {
+          "label": "between21and3",
+          "count": 16688
+        }
+      ]
+    },
+    "2018": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 636
+        },
+        {
+          "label": "is_inactive",
+          "count": 51
+        },
+        {
+          "label": "is_background",
+          "count": 64792
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 65479
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 28758
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 17379
+        },
+        {
+          "label": "is_full",
+          "count": 19342
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 64972
+        },
+        {
+          "label": "is_True",
+          "count": 507
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 17510
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 47969
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 20435
+        },
+        {
+          "label": "between3and9",
+          "count": 24222
+        },
+        {
+          "label": "between6and12",
+          "count": 27814
+        },
+        {
+          "label": "between9and15",
+          "count": 29423
+        },
+        {
+          "label": "between12and18",
+          "count": 16699
+        },
+        {
+          "label": "between15and21",
+          "count": 1712
+        },
+        {
+          "label": "between18and24",
+          "count": 531
+        },
+        {
+          "label": "between21and3",
+          "count": 14268
+        }
+      ]
+    },
+    "2019": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 743
+        },
+        {
+          "label": "is_inactive",
+          "count": 86
+        },
+        {
+          "label": "is_background",
+          "count": 71778
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 72607
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 34228
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 19175
+        },
+        {
+          "label": "is_full",
+          "count": 19204
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 71960
+        },
+        {
+          "label": "is_True",
+          "count": 647
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 18515
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 54092
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 19020
+        },
+        {
+          "label": "between3and9",
+          "count": 23518
+        },
+        {
+          "label": "between6and12",
+          "count": 28985
+        },
+        {
+          "label": "between9and15",
+          "count": 35742
+        },
+        {
+          "label": "between12and18",
+          "count": 24179
+        },
+        {
+          "label": "between15and21",
+          "count": 4059
+        },
+        {
+          "label": "between18and24",
+          "count": 423
+        },
+        {
+          "label": "between21and3",
+          "count": 13078
+        }
+      ]
+    },
+    "2020": {
+      "app_state": [
+        {
+          "label": "is_active",
+          "count": 174
+        },
+        {
+          "label": "is_inactive",
+          "count": 14
+        },
+        {
+          "label": "is_background",
+          "count": 15879
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "battery_plugged": [
+        {
+          "label": "is_ac",
+          "count": 0
+        },
+        {
+          "label": "is_usb",
+          "count": 0
+        },
+        {
+          "label": "is_wireless",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 16067
+        }
+      ],
+      "battery_state": [
+        {
+          "label": "is_unknown",
+          "count": 0
+        },
+        {
+          "label": "is_unplugged",
+          "count": 7516
+        },
+        {
+          "label": "is_not_charging",
+          "count": 0
+        },
+        {
+          "label": "is_discharging",
+          "count": 0
+        },
+        {
+          "label": "is_charging",
+          "count": 4122
+        },
+        {
+          "label": "is_full",
+          "count": 4429
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "on_the_phone": [
+        {
+          "label": "is_False",
+          "count": 15919
+        },
+        {
+          "label": "is_True",
+          "count": 148
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+
+      "wifi_status": [
+        {
+          "label": "is_not_reachable",
+          "count": 3980
+        },
+        {
+          "label": "is_reachable_via_wifi",
+          "count": 12087
+        },
+        {
+          "label": "is_reachable_via_wwan",
+          "count": 0
+        },
+        {
+          "label": "missing",
+          "count": 0
+        }
+      ],
+      "time_of_day": [
+        {
+          "label": "between0and6",
+          "count": 4402
+        },
+        {
+          "label": "between3and9",
+          "count": 5653
+        },
+        {
+          "label": "between6and12",
+          "count": 6096
+        },
+        {
+          "label": "between9and15",
+          "count": 7704
+        },
+        {
+          "label": "between12and18",
+          "count": 5562
+        },
+        {
+          "label": "between15and21",
+          "count": 1089
+        },
+        {
+          "label": "between18and24",
+          "count": 7
+        },
+        {
+          "label": "between21and3",
+          "count": 2735
+        }
+      ]
+    }
+  }
+}

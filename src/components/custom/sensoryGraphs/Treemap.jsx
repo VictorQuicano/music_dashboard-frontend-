@@ -19,6 +19,7 @@ const Treemap = ({ dataRaw }) => {
   // Minimum dimensions
   const minWidth = 600;
   const minHeight = 600;
+  const maxHeight = 600;
 
   useEffect(() => {
     const data = {
@@ -209,7 +210,12 @@ const Treemap = ({ dataRaw }) => {
   return (
     <div
       ref={wrapperRef}
-      style={{ width: "100%", height: "100%", minHeight: `${minHeight}px` }}
+      style={{
+        width: "100%",
+        height: "100%",
+        minHeight: `${minHeight}px`,
+        maxHeight: `${maxHeight}px`,
+      }}
     >
       <svg ref={svgRef}></svg>
     </div>

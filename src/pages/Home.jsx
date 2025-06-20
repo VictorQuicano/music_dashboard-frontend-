@@ -2,8 +2,8 @@ import DBIcon from "@/components/custom/DBIcon";
 import MusicImg from "@/assets/music.png";
 import Stadistic from "@/assets/stadistics.png";
 import HumanActivity from "@/assets/human_activity.webp";
-import KidGif from "@/assets/Kid-2_v4.webp";
 import { title } from "framer-motion/client";
+import ImgPopover from "@/components/custom/ImgPopover";
 
 function Home() {
   const Music4AllInfo = {
@@ -67,7 +67,7 @@ function Home() {
       </div>
 
       <div className="flex justify-end items-center md:items-end">
-        <img src={KidGif} width={900} />
+        <ImgPopover />
       </div>
     </div>
   );

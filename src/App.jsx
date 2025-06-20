@@ -9,6 +9,7 @@ import { Search as Music4AllSearch } from "@/pages/music4all/Search";
 import { AnimatedPageWrapper } from "./components/layouts/AnimatedPageWrapper";
 
 import { Index as MusicExtrasensoryIndex } from "@/pages/music_extrasensory/Index";
+import { Index as StreamedIndex } from "@/pages/streamed/Index";
 
 function AppRoutes() {
   return (
@@ -50,6 +51,14 @@ function AppRoutes() {
         element={
           <AnimatedPageWrapper animation="slideRightToLeft">
             <MusicExtrasensoryIndex />
+          </AnimatedPageWrapper>
+        }
+      />
+      <Route
+        path="/streamed"
+        element={
+          <AnimatedPageWrapper animation="slideRightToLeft">
+            <StreamedIndex />
           </AnimatedPageWrapper>
         }
       />

@@ -1,0 +1,296 @@
+{
+  "general": {
+    "popularity": [
+      {
+        "label": "mean_popularity",
+        "count": 35.0806
+      },
+      {
+        "label": "median_popularity",
+        "count": 34.0
+      },
+      {
+        "label": "max_popularity",
+        "count": 95.0
+      },
+      {
+        "label": "min_popularity",
+        "count": 0.0
+      }
+    ],
+    "danceability": [
+      {
+        "label": "mean_danceability",
+        "count": 0.5204
+      },
+      {
+        "label": "median_danceability",
+        "count": 0.528
+      },
+      {
+        "label": "max_danceability",
+        "count": 0.988
+      },
+      {
+        "label": "min_danceability",
+        "count": 0.0
+      }
+    ],
+    "energy": [
+      {
+        "label": "mean_energy",
+        "count": 0.6672
+      },
+      {
+        "label": "median_energy",
+        "count": 0.712
+      },
+      {
+        "label": "max_energy",
+        "count": 1.0
+      },
+      {
+        "label": "min_energy",
+        "count": 0.0
+      }
+    ],
+    "key": [
+      {
+        "label": "mean_key",
+        "count": 5.2841
+      },
+      {
+        "label": "median_key",
+        "count": 5.0
+      },
+      {
+        "label": "max_key",
+        "count": 11.0
+      },
+      {
+        "label": "min_key",
+        "count": 0.0
+      }
+    ],
+    "mode": [
+      {
+        "label": "mean_mode",
+        "count": 0.6247
+      },
+      {
+        "label": "median_mode",
+        "count": 1.0
+      },
+      {
+        "label": "max_mode",
+        "count": 1.0
+      },
+      {
+        "label": "min_mode",
+        "count": 0.0
+      }
+    ],
+    "valence": [
+      {
+        "label": "mean_valence",
+        "count": 0.4455
+      },
+      {
+        "label": "median_valence",
+        "count": 0.424
+      },
+      {
+        "label": "max_valence",
+        "count": 0.998
+      },
+      {
+        "label": "min_valence",
+        "count": 0.0
+      }
+    ],
+    "tempo": [
+      {
+        "label": "mean_tempo",
+        "count": 122.753
+      },
+      {
+        "label": "median_tempo",
+        "count": 121.079
+      },
+      {
+        "label": "max_tempo",
+        "count": 242.903
+      },
+      {
+        "label": "min_tempo",
+        "count": 0.0
+      }
+    ],
+    "duration_ms": [
+      {
+        "label": "mean_duration_ms",
+        "count": 242504.6361
+      },
+      {
+        "label": "median_duration_ms",
+        "count": 227533.0
+      },
+      {
+        "label": "max_duration_ms",
+        "count": 4995315.0
+      },
+      {
+        "label": "min_duration_ms",
+        "count": 7229.0
+      }
+    ]
+  },
+  "by_year": {
+    "1970": {
+      "popularity": [
+        {
+          "label": "mean_popularity",
+          "count": 35.0806
+        },
+        {
+          "label": "median_popularity",
+          "count": 34.0
+        },
+        {
+          "label": "max_popularity",
+          "count": 95.0
+        },
+        {
+          "label": "min_popularity",
+          "count": 0.0
+        }
+      ],
+      "danceability": [
+        {
+          "label": "mean_danceability",
+          "count": 0.5204
+        },
+        {
+          "label": "median_danceability",
+          "count": 0.528
+        },
+        {
+          "label": "max_danceability",
+          "count": 0.988
+        },
+        {
+          "label": "min_danceability",
+          "count": 0.0
+        }
+      ],
+      "energy": [
+        {
+          "label": "mean_energy",
+          "count": 0.6672
+        },
+        {
+          "label": "median_energy",
+          "count": 0.712
+        },
+        {
+          "label": "max_energy",
+          "count": 1.0
+        },
+        {
+          "label": "min_energy",
+          "count": 0.0
+        }
+      ],
+      "key": [
+        {
+          "label": "mean_key",
+          "count": 5.2841
+        },
+        {
+          "label": "median_key",
+          "count": 5.0
+        },
+        {
+          "label": "max_key",
+          "count": 11.0
+        },
+        {
+          "label": "min_key",
+          "count": 0.0
+        }
+      ],
+      "mode": [
+        {
+          "label": "mean_mode",
+          "count": 0.6247
+        },
+        {
+          "label": "median_mode",
+          "count": 1.0
+        },
+        {
+          "label": "max_mode",
+          "count": 1.0
+        },
+        {
+          "label": "min_mode",
+          "count": 0.0
+        }
+      ],
+      "valence": [
+        {
+          "label": "mean_valence",
+          "count": 0.4455
+        },
+        {
+          "label": "median_valence",
+          "count": 0.424
+        },
+        {
+          "label": "max_valence",
+          "count": 0.998
+        },
+        {
+          "label": "min_valence",
+          "count": 0.0
+        }
+      ],
+      "tempo": [
+        {
+          "label": "mean_tempo",
+          "count": 122.753
+        },
+        {
+          "label": "median_tempo",
+          "count": 121.079
+        },
+        {
+          "label": "max_tempo",
+          "count": 242.903
+        },
+        {
+          "label": "min_tempo",
+          "count": 0.0
+        }
+      ],
+      "duration_ms": [
+        {
+          "label": "mean_duration_ms",
+          "count": 242504.6361
+        },
+        {
+          "label": "median_duration_ms",
+          "count": 227533.0
+        },
+        {
+          "label": "max_duration_ms",
+          "count": 4995315.0
+        },
+        {
+          "label": "min_duration_ms",
+          "count": 7229.0
+        }
+      ]
+    }
+  }
+}

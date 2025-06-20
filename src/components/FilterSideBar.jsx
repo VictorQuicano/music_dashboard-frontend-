@@ -40,7 +40,7 @@ const FilterSidebar = ({
   //console.log(filterData);
 
   return (
-    <Box w="350px" h="auto" p={4}>
+    <Box w="300px" h="auto" p={4}>
       <VStack align="stretch" spacing={4}>
         {/* Título */}
         <Text fontSize="xl" fontWeight="bold" color="white">

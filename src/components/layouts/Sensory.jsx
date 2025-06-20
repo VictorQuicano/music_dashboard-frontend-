@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Music from "@/components/icons/Music";
 import Back from "../icons/Back";
 import { Link } from "react-router-dom";
@@ -17,8 +18,9 @@ export function Sensory({
   selectedM4ADS,
   setSelectedM4ADS,
 }) {
+  const [isCollapsed, setIsCollapsed] = useState(false);
   const controls = useAnimation();
-  const animationRef = useRef(false); // Para controlar el ciclo
+  const animationRef = useRef(false);
 
   const startAnimation = async () => {
     animationRef.current = true;
@@ -33,34 +35,43 @@ export function Sensory({
     animationRef.current = false;
   };
 
+  const toggleSidebar = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
   return (
     <div className="flex min-w-full h-screen min-h-0 max-h-none">
       <div
         id="sideBar"
-        className="bg-cyan-800 w-fit flex flex-col justify-start h-full items-center pt-4 relative overflow-y-auto"
+        className={`bg-cyan-800 ${
+          isCollapsed ? "w-16" : "w-[350px]"
+        } flex flex-col justify-start h-full items-center pt-4 relative overflow-y-auto transition-all duration-300 ease-in-out`}
       >
-        <div>
-          <Link
-            className="hover:cursor-pointer hover:bg-white rounded-lg"
-            to="/music_4_all"
+        <div className="w-full">
+          <div
+            className="hover:cursor-pointer hover:bg-white rounded-lg flex justify-center"
+            onClick={toggleSidebar}
           >
             <Tooltip
-              content="Menu Principal"
+              content={isCollapsed ? "Expandir menú" : "Contraer menú"}
               positioning={{ placement: "right-end" }}
             >
               <Music className="text-white w-10 h-10 mb-10 m-4 hover:text-cyan-600 hover:cursor-pointer" />
             </Tooltip>
-          </Link>
-          <div className="flex flex-col">
-            <FilterSidebar
-              selectedYear={selectedYear}
-              setSelectedYear={setSelectedYear}
-              selectedExtraDS={selectedExtraDS}
-              setSelectedExtraDS={setSelectedExtraDS}
-              selectedM4ADS={selectedM4ADS}
-              setSelectedM4ADS={setSelectedM4ADS}
-            />
           </div>
+
+          {!isCollapsed && (
+            <div className="flex flex-col">
+              <FilterSidebar
+                selectedYear={selectedYear}
+                setSelectedYear={setSelectedYear}
+                selectedExtraDS={selectedExtraDS}
+                setSelectedExtraDS={setSelectedExtraDS}
+                selectedM4ADS={selectedM4ADS}
+                setSelectedM4ADS={setSelectedM4ADS}
+              />
+            </div>
+          )}
         </div>
       </div>
       <div

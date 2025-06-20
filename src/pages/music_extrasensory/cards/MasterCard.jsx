@@ -14,6 +14,14 @@ import {
 import RawAcc from "../Graphs/RawAcc";
 import Gyro from "../Graphs/Gyro";
 import Mag from "../Graphs/Mag";
+import WatchAcc from "../Graphs/WatchAcc";
+import WatchHea from "../Graphs/WatchHea";
+import MovementVisualization from "../Graphs/Location";
+import LocQuick from "../Graphs/LocQuick";
+import AudioMFCC from "../Graphs/AudioMFCC";
+import Discrete from "../Graphs/Discrete";
+import Labels from "../Graphs/Labels";
+import PlotMusic from "../Graphs/PlotMusic";
 
 const PorDefecto = () => <h1>Soy Un Test</h1>;
 
@@ -47,21 +55,33 @@ export default function MasterCard({
   const graphMap = {
     raw_acc: {
       Component: (props) => <RawAcc {...props} />,
-      colSpan: 1,
+      colSpan: 4,
     },
     proc_gyro: {
       Component: (props) => <Gyro {...props} />,
       colSpan: 2,
     },
     raw_magnet: { Component: (props) => <Mag {...props} />, colSpan: 2 },
-    watch_acceleration: { Component: PorDefecto, colSpan: 1 },
-    watch_heading: { Component: PorDefecto, colSpan: 1 },
-    location: { Component: PorDefecto, colSpan: 1 },
-    location_quick_features: { Component: PorDefecto, colSpan: 1 },
-    audio_naive: { Component: PorDefecto, colSpan: 1 },
-    discrete: { Component: PorDefecto, colSpan: 1 },
-    lf_measurements: { Component: PorDefecto, colSpan: 1 },
-    Audio: { Component: PorDefecto, colSpan: 1 },
+    watch_acceleration: {
+      Component: (props) => <WatchAcc {...props} />,
+      colSpan: 2,
+    },
+    watch_heading: {
+      Component: (props) => <WatchHea {...props} />,
+      colSpan: 2,
+    },
+    location: {
+      Component: (props) => <MovementVisualization {...props} />,
+      colSpan: 4,
+    },
+    location_quick_features: {
+      Component: (props) => <LocQuick {...props} />,
+      colSpan: 4,
+    },
+    audio_naive: { Component: (props) => <AudioMFCC {...props} />, colSpan: 2 },
+    discrete: { Component: (props) => <Discrete {...props} />, colSpan: 4 },
+    label: { Component: (props) => <Labels {...props} />, colSpan: 2 },
+    Audio: { Component: (props) => <PlotMusic {...props} />, colSpan: 3 },
     EMD: { Component: PorDefecto, colSpan: 1 },
     EGC: { Component: PorDefecto, colSpan: 1 },
     UGC: { Component: PorDefecto, colSpan: 1 },
@@ -135,15 +155,15 @@ export default function MasterCard({
 
   return (
     <div className="flex flex-col gap-4">
-      <Card className="grid grid-cols-3 gap-5">
-        <h2 className="!text-lg !font-bold !mb-2 text-center col-span-3">
+      <Card className="grid grid-cols-4 gap-5">
+        <h2 className="!text-lg !font-bold !mb-2 text-center col-span-4">
           Data proporcionada por EXTRASENSORY
         </h2>
         {extraGraphs.length > 0 ? extraGraphs : <NoSelectec />}
       </Card>
 
-      <Card className="grid grid-cols-3 gap-5">
-        <h2 className="!text-lg !font-bold !mb-2 text-center col-span-3">
+      <Card className="grid grid-cols-4 gap-5">
+        <h2 className="!text-lg !font-bold !mb-2 text-center col-span-4">
           Data proporcionada por MUSIC4ALL
         </h2>
         {m4aGraphs.length > 0 ? m4aGraphs : <NoSelectec />}
