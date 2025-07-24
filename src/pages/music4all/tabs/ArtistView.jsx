@@ -24,7 +24,7 @@ const ArtistAlbumsView = ({ artistData }) => {
 export default function ArtistView({ name }) {
   const [isLoading, setIsLoading] = useState(true);
   const [isEmpty, setIsEmpty] = useState(true);
-  const [artistData, setArtistData] = useState(null);
+  //const [artistData, setArtistData] = useState(null);
   const [albums, setAlbums] = useState([]);
 
   useEffect(() => {
@@ -51,6 +51,18 @@ export default function ArtistView({ name }) {
     fetchArtist();
   }, [name]);
 
+  const artistData = {
+    artist_name: "Bad Bunny",
+    image_url:
+      "https://www.rtve.es/playz/20220207/bad-bunny-record-escuchas/2283523.shtml",
+    stats: {
+      total_songs: 140,
+      avg_energy: 0.6,
+      avg_valence: 0.37,
+      avg_danceability: 0.75,
+    },
+    albums: [],
+  };
   // Datos seguros para el Radar
   const radarData = artistData?.stats
     ? {
@@ -60,7 +72,12 @@ export default function ArtistView({ name }) {
       }
     : null;
 
-  const labels_help = ["💃🏻Danzabilidad", "⚡️Energía", "🎭Valance"];
+  const labels_help = [
+    { label: "💃🏻Danzabilidad", color: "!border-pink-600" },
+    { label: "⚡️Energía", color: "!border-yellow-500" },
+    { label: "🎭Valance", color: "!border-purple-500" },
+  ];
+
   if (isEmpty) {
     return (
       <div className="w-full flex flex-col justify-center items-center py-30">
@@ -85,7 +102,7 @@ export default function ArtistView({ name }) {
       </div>
 
       {/* Columna derecha */}
-      <div className="w-[30%] h-full sticky top-5">
+      <div className="w-[30%] h-full sticky top-5 bg-white p-5">
         <Skeleton isLoaded={!isLoading} rounded="xl">
           <div className="relative w-full h-full">
             <div className="flex flex-col gap-4 w-full justify-center items-center sticky top-0">
@@ -101,7 +118,7 @@ export default function ArtistView({ name }) {
                 {artistData?.artist_name || "Artista desconocido"}
               </h2>
 
-              <div className="rounded-3xl p-4 bg-gray-800 h-fit flex flex-col gap-4 w-full">
+              <div className="rounded-3xl p-4 bg-white h-fit flex flex-col gap-4 w-full shadow-md !text-black">
                 <ul className="text-gray-400">
                   <li>
                     <p>
@@ -121,13 +138,14 @@ export default function ArtistView({ name }) {
                     return (
                       <div
                         key={index}
-                        className="rounded-full border border-gray-600 text-center py-2 px-4 m-1 bg-gray-600"
+                        className={`rounded-full !border-2 text-center py-2 px-4 m-1 text-black ${item.color}`}
                       >
-                        {item}
+                        {item.label}
                       </div>
                     );
                   })}
                 </div>
+
                 {radarData && <Radar data={radarData} />}
               </div>
             </div>

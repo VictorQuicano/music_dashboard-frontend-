@@ -71,7 +71,7 @@ function Radar({
           const positions = ["1.5em", "0.5em", "-0.5em", "-0.5em", "0.5em"];
           return positions[i % positions.length];
         })
-        .attr("fill", "white");
+        .attr("fill", "black");
     });
 
     // Círculos de nivel y etiquetas
@@ -90,7 +90,7 @@ function Radar({
         .attr("x", width / 2)
         .attr("y", height / 2 - radAxis(el) - 5)
         .text(el)
-        .attr("fill", "white")
+        .attr("fill", "black")
         .attr("opacity", "0.5")
         .style("text-anchor", "middle")
         .style("font-size", "0.825rem");
@@ -135,7 +135,7 @@ function Radar({
       .attr("y", height / 2 + 155)
       .attr("x", width / 2 + 280)
       .text(playerName)
-      .style("fill", "white");
+      .style("fill", "black");
   }, [data, color, playerName]);
 
   return <svg viewBox={`0 0 ${width} ${height}`} ref={containerRef}></svg>;

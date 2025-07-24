@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafo de Relaciones entre Labels</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background: #0f0f0f;
+        color: white;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: #00d4ff;
+        margin-bottom: 30px;
+      }
+
+      .controls {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      .control-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      label {
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: #ccc;
+      }
+
+      input[type="range"] {
+        width: 150px;
+      }
+
+      button {
+        background: #00d4ff;
+        color: #0f0f0f;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background: #00b8e6;
+      }
+
+      .legend {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .legend-color {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+      }
+
+      .legend-text {
+        font-size: 12px;
+        color: #ccc;
+      }
+
+      #graph {
+        width: 100%;
+        height: 600px;
+        border: 1px solid #333;
+        border-radius: 8px;
+        background: #1a1a1a;
+      }
+
+      .node {
+        cursor: pointer;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .node:hover {
+        stroke: #00d4ff;
+        stroke-width: 3px;
+      }
+
+      .link {
+        fill: none;
+        stroke-opacity: 0.6;
+      }
+
+      .node-label {
+        font-size: 10px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: white;
+        pointer-events: none;
+      }
+
+      .tooltip {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        pointer-events: none;
+        border: 1px solid #00d4ff;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Grafo de Relaciones entre Labels</h1>
+      <!--
+      -->
+      <div class="controls">
+        <div class="control-group">
+          <label>Fuerza de Repulsión</label>
+          <input
+            type="range"
+            id="chargeStrength"
+            min="50"
+            max="500"
+            value="200"
+          />
+        </div>
+        <div class="control-group">
+          <label>Distancia de Enlaces</label>
+          <input type="range" id="linkDistance" min="30" max="200" value="80" />
+        </div>
+        <div class="control-group">
+          <label>Filtro de Confianza</label>
+          <input
+            type="range"
+            id="confidenceFilter"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.05"
+          />
+        </div>
+        <button onclick="resetSimulation()">Reiniciar Simulación</button>
+      </div>
+
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: #ff6b6b"></div>
+          <span class="legend-text">Postura</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: #4ecdc4"></div>
+          <span class="legend-text">Actividad</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: #45b7d1"></div>
+          <span class="legend-text">Ubicación</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: #f9ca24"></div>
+          <span class="legend-text">Dispositivo</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background-color: #6c5ce7"></div>
+          <span class="legend-text">Compañía</span>
+        </div>
+      </div>
+
+      <svg id="graph"></svg>
+    </div>
+
+    <script>
+      const data = [
+        {
+          postura: {
+            "label:SITTING": [
+              {
+                actividad: [
+                  { etiqueta: "label:SLEEPING", value: 0.4641 },
+                  { etiqueta: "label:COMPUTER_WORK", value: 0.3697 },
+                ],
+              },
+            ],
+            "label:OR_standing": [
+              { actividad: [{ etiqueta: "label:COOKING", value: 0.2442 }] },
+            ],
+            "label:LYING_DOWN": [
+              { actividad: [{ etiqueta: "label:SLEEPING", value: 0.8183 }] },
+              { ubication: [{ etiqueta: "label:OR_indoors", value: 0.4988 }] },
+            ],
+            "label:FIX_walking": [
+              {
+                ubication: [
+                  { etiqueta: "label:OR_outside", value: 0.3519 },
+                  { etiqueta: "label:OR_indoors", value: 0.2238 },
+                ],
+              },
+            ],
+            "label:FIX_running": [
+              { actividad: [{ etiqueta: "label:AT_THE_GYM", value: 0.2528 }] },
+              { ubication: [{ etiqueta: "label:OR_outside", value: 0.0704 }] },
+            ],
+            "label:STAIRS_-_GOING_UP": [
+              { ubication: [{ etiqueta: "label:OR_outside", value: 0.1291 }] },
+            ],
+            "label:STAIRS_-_GOING_DOWN": [
+              { ubication: [{ etiqueta: "label:OR_outside", value: 0.1347 }] },
+            ],
+          },
+        },
+        {
+          actividad: {
+            "label:BATHING_-_SHOWER": [
+              { postura: [{ etiqueta: "label:OR_standing", value: 0.2101 }] },
+            ],
+            "label:GROOMING": [
+              { postura: [{ etiqueta: "label:OR_standing", value: 0.2302 }] },
+            ],
+            "label:DRESSING": [
+              { postura: [{ etiqueta: "label:OR_standing", value: 0.2044 }] },
+            ],
+            "label:COOKING": [
+              { postura: [{ etiqueta: "label:OR_standing", value: 0.2442 }] },
+            ],
+            "label:CLEANING": [
+              { postura: [{ etiqueta: "label:OR_standing", value: 0.2137 }] },
+            ],
+            "label:DOING_LAUNDRY": [
+              { postura: [{ etiqueta: "label:OR_standing", value: 0.0856 }] },
+            ],
+            "label:WASHING_DISHES": [
+              { postura: [{ etiqueta: "label:OR_standing", value: 0.1638 }] },
+            ],
+            "label:WATCHING_TV": [
+              { postura: [{ etiqueta: "label:SITTING", value: 0.1494 }] },
+            ],
+            "label:SURFING_THE_INTERNET": [
+              { postura: [{ etiqueta: "label:SITTING", value: 0.195 }] },
+              { device: [{ etiqueta: "label:PHONE_ON_TABLE", value: 0.1283 }] },
+            ],
+            "label:SLEEPING": [
+              {
+                postura: [
+                  { etiqueta: "label:LYING_DOWN", value: 0.8183 },
+                  { etiqueta: "label:SITTING", value: 0.4641 },
+                ],
+              },
+              { ubication: [{ etiqueta: "label:OR_indoors", value: 0.512 }] },
+            ],
+            "label:LAB_WORK": [
+              {
+                ubication: [
+                  { etiqueta: "label:AT_SCHOOL", value: 0.1778 },
+                  { etiqueta: "label:LOC_main_workplace", value: 0.148 },
+                ],
+              },
+              {
+                device: [{ etiqueta: "label:PHONE_IN_POCKET", value: 0.1686 }],
+              },
+            ],
+            "label:COMPUTER_WORK": [
+              {
+                postura: [
+                  { etiqueta: "label:SITTING", value: 0.3697 },
+                  { etiqueta: "label:LYING_DOWN", value: 0.2315 },
+                ],
+              },
+              {
+                ubication: [
+                  { etiqueta: "label:LOC_main_workplace", value: 0.2918 },
+                ],
+              },
+            ],
+            "label:IN_CLASS": [
+              {
+                ubication: [
+                  { etiqueta: "label:AT_SCHOOL", value: 0.1918 },
+                  { etiqueta: "label:LOC_home", value: 0.1281 },
+                ],
+              },
+              { postura: [{ etiqueta: "label:SITTING", value: 0.1491 }] },
+            ],
+            "label:IN_A_MEETING": [
+              {
+                company: [{ etiqueta: "label:WITH_CO-WORKERS", value: 0.2496 }],
+              },
+              {
+                ubication: [
+                  { etiqueta: "label:LOC_main_workplace", value: 0.1236 },
+                ],
+              },
+              { postura: [{ etiqueta: "label:SITTING", value: 0.1187 }] },
+            ],
+            "label:AT_A_PARTY": [
+              { postura: [{ etiqueta: "label:OR_standing", value: 0.1343 }] },
+              { device: [{ etiqueta: "label:PHONE_IN_BAG", value: 0.0763 }] },
+            ],
+            "label:AT_A_BAR": [
+              {
+                ubication: [
+                  { etiqueta: "label:FIX_restaurant", value: 0.0826 },
+                ],
+              },
+              { company: [{ etiqueta: "label:WITH_FRIENDS", value: 0.0765 }] },
+            ],
+            "label:AT_THE_GYM": [
+              {
+                postura: [
+                  { etiqueta: "label:FIX_running", value: 0.2528 },
+                  { etiqueta: "label:OR_standing", value: 0.1066 },
+                ],
+              },
+            ],
+            "label:STROLLING": [
+              { ubication: [{ etiqueta: "label:OR_outside", value: 0.1845 }] },
+              { postura: [{ etiqueta: "label:FIX_walking", value: 0.1275 }] },
+            ],
+            "label:SINGING": [
+              {
+                postura: [
+                  { etiqueta: "label:STAIRS_-_GOING_DOWN", value: 0.1051 },
+                  { etiqueta: "label:STAIRS_-_GOING_UP", value: 0.1035 },
+                ],
+              },
+              { company: [{ etiqueta: "label:WITH_FRIENDS", value: 0.0676 }] },
+            ],
+            "label:TALKING": [
+              { company: [{ etiqueta: "label:WITH_FRIENDS", value: 0.4391 }] },
+              { postura: [{ etiqueta: "label:LYING_DOWN", value: 0.2149 }] },
+            ],
+            "label:DRINKING__ALCOHOL_": [
+              {
+                ubication: [
+                  { etiqueta: "label:FIX_restaurant", value: 0.1425 },
+                ],
+              },
+            ],
+            "label:SHOPPING": [
+              { postura: [{ etiqueta: "label:FIX_walking", value: 0.1722 }] },
+              { ubication: [{ etiqueta: "label:OR_outside", value: 0.112 }] },
+            ],
+            "label:DRIVE_-_I_M_THE_DRIVER": [
+              { postura: [{ etiqueta: "label:SITTING", value: 0.1585 }] },
+              { ubication: [{ etiqueta: "label:OR_indoors", value: 0.1555 }] },
+            ],
+            "label:DRIVE_-_I_M_A_PASSENGER": [
+              { postura: [{ etiqueta: "label:SITTING", value: 0.104 }] },
+            ],
+            "label:IN_A_CAR": [
+              { device: [{ etiqueta: "label:PHONE_IN_BAG", value: 0.1979 }] },
+            ],
+            "label:ON_A_BUS": [
+              { device: [{ etiqueta: "label:PHONE_IN_HAND", value: 0.0817 }] },
+              { ubication: [{ etiqueta: "label:OR_indoors", value: 0.079 }] },
+            ],
+            "label:BICYCLING": [
+              {
+                ubication: [
+                  { etiqueta: "label:OR_indoors", value: 0.132 },
+                  { etiqueta: "label:LOC_home", value: 0.106 },
+                ],
+              },
+            ],
+          },
+        },
+        {
+          ubication: {
+            "label:OR_indoors": [
+              { actividad: [{ etiqueta: "label:SLEEPING", value: 0.512 }] },
+              { postura: [{ etiqueta: "label:LYING_DOWN", value: 0.4988 }] },
+            ],
+            "label:LOC_home": [
+              { postura: [{ etiqueta: "label:LYING_DOWN", value: 0.3832 }] },
+              { actividad: [{ etiqueta: "label:SLEEPING", value: 0.3455 }] },
+            ],
+            "label:LOC_main_workplace": [
+              {
+                actividad: [{ etiqueta: "label:COMPUTER_WORK", value: 0.2918 }],
+              },
+            ],
+            "label:AT_SCHOOL": [
+              {
+                postura: [
+                  { etiqueta: "label:SITTING", value: 0.2645 },
+                  { etiqueta: "label:LYING_DOWN", value: 0.2575 },
+                ],
+              },
+            ],
+            "label:OR_outside": [
+              { postura: [{ etiqueta: "label:FIX_walking", value: 0.3519 }] },
+              {
+                device: [{ etiqueta: "label:PHONE_IN_POCKET", value: 0.1869 }],
+              },
+            ],
+            "label:LOC_beach": [
+              { device: [{ etiqueta: "label:PHONE_IN_BAG", value: 0.0673 }] },
+            ],
+            "label:FIX_restaurant": [
+              {
+                actividad: [
+                  { etiqueta: "label:DRINKING__ALCOHOL_", value: 0.1425 },
+                  { etiqueta: "label:AT_A_BAR", value: 0.0826 },
+                ],
+              },
+            ],
+          },
+        },
+        {
+          device: {
+            "label:PHONE_IN_POCKET": [
+              { postura: [{ etiqueta: "label:FIX_walking", value: 0.1892 }] },
+              { ubication: [{ etiqueta: "label:OR_outside", value: 0.1869 }] },
+            ],
+            "label:PHONE_IN_HAND": [
+              { actividad: [{ etiqueta: "label:TALKING", value: 0.1229 }] },
+              { ubication: [{ etiqueta: "label:OR_outside", value: 0.1093 }] },
+            ],
+            "label:PHONE_IN_BAG": [
+              {
+                actividad: [
+                  { etiqueta: "label:IN_A_CAR", value: 0.1979 },
+                  { etiqueta: "label:DRIVE_-_I_M_THE_DRIVER", value: 0.1433 },
+                ],
+              },
+              { ubication: [{ etiqueta: "label:LOC_home", value: 0.1542 }] },
+            ],
+            "label:PHONE_ON_TABLE": [
+              { ubication: [{ etiqueta: "label:OR_indoors", value: 0.2083 }] },
+              { postura: [{ etiqueta: "label:FIX_walking", value: 0.1848 }] },
+            ],
+          },
+        },
+        {
+          company: {
+            "label:WITH_CO-WORKERS": [
+              {
+                actividad: [{ etiqueta: "label:IN_A_MEETING", value: 0.2496 }],
+              },
+              {
+                ubication: [
+                  { etiqueta: "label:LOC_main_workplace", value: 0.2014 },
+                  { etiqueta: "label:LOC_home", value: 0.1304 },
+                ],
+              },
+            ],
+            "label:WITH_FRIENDS": [
+              { actividad: [{ etiqueta: "label:TALKING", value: 0.4391 }] },
+              { ubication: [{ etiqueta: "label:LOC_home", value: 0.169 }] },
+              { postura: [{ etiqueta: "label:LYING_DOWN", value: 0.1318 }] },
+            ],
+          },
+        },
+      ];
+
+      const svg = d3.select("#graph");
+      const width = 1200;
+      const height = 600;
+      svg.attr("width", width).attr("height", height);
+
+      const colorScale = {
+        postura: "#ff6b6b",
+        actividad: "#4ecdc4",
+        ubication: "#45b7d1",
+        device: "#f9ca24",
+        company: "#6c5ce7",
+      };
+
+      function processData(data, confidenceThreshold = 0.05) {
+        const nodes = new Map();
+        const links = [];
+
+        function addNode(id, category) {
+          if (!nodes.has(id)) {
+            const cleanId = id
+              .replace(/label:|FIX_|OR_|LOC_|AT_|IN_|_-_/g, "")
+              .replace(/_/g, " ");
+            nodes.set(id, {
+              id: id,
+              label: cleanId,
+              category: category,
+              color: colorScale[category],
+              connections: 0,
+            });
+          }
+        }
+
+        data.forEach((categoryData) => {
+          Object.keys(categoryData).forEach((category) => {
+            const categoryItems = categoryData[category];
+
+            Object.keys(categoryItems).forEach((sourceLabel) => {
+              addNode(sourceLabel, category);
+
+              categoryItems[sourceLabel].forEach((relationGroup) => {
+                Object.keys(relationGroup).forEach((targetCategory) => {
+                  relationGroup[targetCategory].forEach((relation) => {
+                    const targetLabel = relation.etiqueta;
+                    const value = relation.value;
+
+                    if (value >= confidenceThreshold) {
+                      addNode(targetLabel, targetCategory);
+
+                      links.push({
+                        source: sourceLabel,
+                        target: targetLabel,
+                        value: value,
+                        weight: Math.sqrt(value) * 10,
+                      });
+
+                      nodes.get(sourceLabel).connections++;
+                      nodes.get(targetLabel).connections++;
+                    }
+                  });
+                });
+              });
+            });
+          });
+        });
+
+        return {
+          nodes: Array.from(nodes.values()),
+          links: links,
+        };
+      }
+
+      let simulation, g, node, link, nodeLabels;
+
+      function createGraph(confidenceThreshold = 0.05) {
+        const { nodes, links } = processData(data, confidenceThreshold);
+
+        svg.selectAll("*").remove();
+
+        g = svg.append("g");
+
+        // Add zoom behavior
+        const zoom = d3
+          .zoom()
+          .scaleExtent([0.1, 4])
+          .on("zoom", (event) => {
+            g.attr("transform", event.transform);
+          });
+
+        svg.call(zoom);
+
+        // Create simulation
+        simulation = d3
+          .forceSimulation(nodes)
+          .force(
+            "link",
+            d3
+              .forceLink(links)
+              .id((d) => d.id)
+              .distance((d) => Math.max(30, 100 - d.weight * 2))
+          )
+          .force("charge", d3.forceManyBody().strength(-200))
+          .force("center", d3.forceCenter(width / 2, height / 2))
+          .force(
+            "collision",
+            d3.forceCollide((d) => Math.max(25, d.connections * 3))
+          );
+
+        // Create links
+        link = g
+          .append("g")
+          .selectAll("line")
+          .data(links)
+          .enter()
+          .append("line")
+          .attr("class", "link")
+          .attr("stroke", "#666")
+          .attr("stroke-width", (d) => Math.max(1, d.weight / 5))
+          .attr("stroke-opacity", (d) => 0.3 + d.value * 0.7);
+
+        // Create nodes
+        node = g
+          .append("g")
+          .selectAll("circle")
+          .data(nodes)
+          .enter()
+          .append("circle")
+          .attr("class", "node")
+          .attr("r", (d) => Math.max(8, Math.min(25, 10 + d.connections * 2)))
+          .attr("fill", (d) => d.color)
+          .call(
+            d3
+              .drag()
+              .on("start", dragstarted)
+              .on("drag", dragged)
+              .on("end", dragended)
+          );
+
+        // Create labels
+        nodeLabels = g
+          .append("g")
+          .selectAll("text")
+          .data(nodes)
+          .enter()
+          .append("text")
+          .attr("class", "node-label")
+          .text((d) => d.label)
+          .attr("dy", ".35em")
+          .style(
+            "font-size",
+            (d) => Math.max(8, Math.min(12, 8 + d.connections * 0.5)) + "px"
+          );
+
+        // Add tooltip
+        const tooltip = d3
+          .select("body")
+          .append("div")
+          .attr("class", "tooltip")
+          .style("opacity", 0);
+
+        node
+          .on("mouseover", function (event, d) {
+            const connections = links.filter(
+              (l) => l.source.id === d.id || l.target.id === d.id
+            );
+            const tooltipText = `
+                    <strong>${d.label}</strong><br>
+                    Categoría: ${d.category}<br>
+                    Conexiones: ${d.connections}<br>
+                    Relaciones principales:<br>
+                    ${connections
+                      .slice(0, 5)
+                      .map(
+                        (l) =>
+                          `• ${
+                            l.source.id === d.id
+                              ? l.target.label
+                              : l.source.label
+                          } (${l.value.toFixed(3)})`
+                      )
+                      .join("<br>")}
+                `;
+
+            tooltip.transition().duration(200).style("opacity", 0.9);
+            tooltip
+              .html(tooltipText)
+              .style("left", event.pageX + 10 + "px")
+              .style("top", event.pageY - 28 + "px");
+          })
+          .on("mouseout", function (d) {
+            tooltip.transition().duration(500).style("opacity", 0);
+          });
+
+        // Update simulation
+        simulation.on("tick", () => {
+          link
+            .attr("x1", (d) => d.source.x)
+            .attr("y1", (d) => d.source.y)
+            .attr("x2", (d) => d.target.x)
+            .attr("y2", (d) => d.target.y);
+
+          node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+
+          nodeLabels.attr("x", (d) => d.x).attr("y", (d) => d.y);
+        });
+      }
+
+      function dragstarted(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      }
+
+      function dragged(event, d) {
+        d.fx = event.x;
+        d.fy = event.y;
+      }
+
+      function dragended(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      }
+
+      function updateSimulation() {
+        const chargeStrength = -parseInt(
+          document.getElementById("chargeStrength").value
+        );
+        const linkDistance = parseInt(
+          document.getElementById("linkDistance").value
+        );
+        const confidenceThreshold = parseFloat(
+          document.getElementById("confidenceFilter").value
+        );
+
+        createGraph(confidenceThreshold);
+
+        simulation
+          .force("charge", d3.forceManyBody().strength(chargeStrength))
+          .force(
+            "link",
+            d3
+              .forceLink()
+              .id((d) => d.id)
+              .distance(linkDistance)
+          )
+          .alpha(1)
+          .restart();
+      }
+
+      function resetSimulation() {
+        updateSimulation();
+      }
+
+      // Event listeners
+      document
+        .getElementById("chargeStrength")
+        .addEventListener("input", updateSimulation);
+      document
+        .getElementById("linkDistance")
+        .addEventListener("input", updateSimulation);
+      document
+        .getElementById("confidenceFilter")
+        .addEventListener("input", updateSimulation);
+
+      // Initial graph creation
+      createGraph();
+    </script>
+  </body>
+</html>
